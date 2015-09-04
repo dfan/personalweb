@@ -42,6 +42,20 @@
     },
     {
       "search": [
+        "arrow",
+        "down",
+        "download"
+      ],
+      "code": 59224,
+      "uid": "40ef3542646bed70cb63f1290c9d98c9",
+      "css": "down-circled",
+      "orig_css": "down-circled",
+      "orig_code": 59224,
+      "src": "entypo",
+      "from": 59224
+    },
+    {
+      "search": [
         "pen",
         "write",
         "reply",

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-
+.icon-download:before { content: "📥"; } /* '\1f4e5' */
 .icon-up-thin:before { content: '\2191'; } /* '↑' */
 .icon-up-dir:before { content: '\25b4'; } /* '▴' */
 .icon-mail:before { content: '\2709'; } /* '✉' */
@@ -19,4 +19,6 @@
 .icon-target:before { content: '🎯'; } /* '\1f3af' */
 .icon-monitor:before { content: '💻'; } /* '\1f4bb' */
 .icon-mobile:before { content: '📱'; } /* '\1f4f1' */
-.icon-shuffle:before { content: '🔀'; } /* '\1f500' */
+.icon-shuffle:before { content: '🔀'; } /* '\1f500' */ 
+
+//this is amazing: https://github.com/danielbruce/entypo/blob/master/font/entypo.css

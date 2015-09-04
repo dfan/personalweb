@@ -30,6 +30,7 @@
 /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
+.icon-download:before { content: "📥"; } /* '\1f4e5' */
 .icon-up-thin:before { content: '\2191'; } /* '↑' */
 .icon-up-dir:before { content: '\25b4'; } /* '▴' */
 .icon-mail:before { content: '\2709'; } /* '✉' */
