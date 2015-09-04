@@ -193,7 +193,7 @@ body {
 	/* Positioning & Display */
     display: block;
     height: 1px;
-    width: 32%;
+    width: 0%; /* The horizontal line around my name */
     position: absolute;
     left: 0;
     top: 1em;
