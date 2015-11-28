@@ -73,7 +73,7 @@ ul, li {
 	font-family: 'Droid Sans', sans-serif; /* 14px/10 */
 	font-size: 1.4em;
 	line-height: 1.8em;
-	color: #8e8d8d;
+	color: #000000; /*8e8d8d*/
 	text-align: left;
 }
 .page {
@@ -346,7 +346,7 @@ body {
 	margin-top: 60px;
 }
 .experience p, .education p {
-	color: #c0c0c0;
+	color: #000000; /*c0c0c0*/
 }
 
 .period  {
@@ -867,7 +867,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 	}
 	.par_el p {
 		font: 1.3em 'Droid Sans', sans-serif; /* 14px/10 */
-		color: #8e8d8d;
+		color: #000000; /*8e8d8d*/
 		text-align: left;
 	}
 	.par_el header h2 {
