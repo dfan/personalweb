@@ -166,7 +166,7 @@ body {
 
 .site_header {
 	padding-top: 30px;
-	padding-bottom: 33px;
+	padding-bottom: 15px;
 	position: relative;
 	text-align: center;
 }
@@ -223,7 +223,7 @@ body {
 \*-----------------------------*/
 
 .about_me {
-	margin-top: 50px;
+	margin-top: 25px;
 }
 .circle {
 	/* Positioning & Display */
