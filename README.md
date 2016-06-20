@@ -1,3 +1,3 @@
 # personalweb
-My personal landing [page](davidfancv.com), written in HTML/CSS.
+My personal landing [page](https://www.davidfancv.com), written in HTML/CSS.
 
