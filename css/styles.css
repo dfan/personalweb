@@ -120,6 +120,7 @@ body {
 \*-----------------------------*/
 
 .site_nav {
+	margin: 0;
 	height: 85px;
 	font-family: 'Droid Sans', serif;
 	z-index: 5000;
@@ -167,6 +168,10 @@ body {
 }
 .site_nav li.active a {
 	color: #747474;
+}
+
+.icon-bar {
+  background-color: #0099E8;
 }
 
 /*-----------------------------*\
