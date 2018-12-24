@@ -3,49 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://davidfan.io/posts/hackprinceton/</loc>
+    <loc>http://dfan.github.io/personalweb/posts/hackprinceton/</loc>
     <lastmod>2018-11-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://davidfan.io/about/</loc>
+    <loc>http://dfan.github.io/personalweb/about/</loc>
   </url>
   
   <url>
-    <loc>https://davidfan.io/categories/</loc>
+    <loc>http://dfan.github.io/personalweb/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://davidfan.io/contact/</loc>
+    <loc>http://dfan.github.io/personalweb/contact/</loc>
   </url>
   
   <url>
-    <loc>https://davidfan.io/</loc>
-    <lastmod>2018-11-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://davidfan.io/experience/</loc>
-  </url>
-  
-  <url>
-    <loc>https://davidfan.io/posts/</loc>
+    <loc>http://dfan.github.io/personalweb/</loc>
     <lastmod>2018-11-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://davidfan.io/projects/</loc>
+    <loc>http://dfan.github.io/personalweb/experience/</loc>
   </url>
   
   <url>
-    <loc>https://davidfan.io/publications/</loc>
+    <loc>http://dfan.github.io/personalweb/posts/</loc>
+    <lastmod>2018-11-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://davidfan.io/tags/</loc>
+    <loc>http://dfan.github.io/personalweb/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>http://dfan.github.io/personalweb/publications/</loc>
+  </url>
+  
+  <url>
+    <loc>http://dfan.github.io/personalweb/tags/</loc>
     <priority>0</priority>
   </url>
   

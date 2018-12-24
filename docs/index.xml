@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>David Fan</title>
-    <link>https://davidfan.io/</link>
+    <link>http://dfan.github.io/personalweb/</link>
     <description>Recent content on David Fan</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 04 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://davidfan.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://dfan.github.io/personalweb/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Behind the Scenes: Challenges of Organizing HackPrinceton</title>
-      <link>https://davidfan.io/posts/hackprinceton/</link>
+      <link>http://dfan.github.io/personalweb/posts/hackprinceton/</link>
       <pubDate>Sun, 04 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://davidfan.io/posts/hackprinceton/</guid>
+      <guid>http://dfan.github.io/personalweb/posts/hackprinceton/</guid>
       <description>If you’ve ever attended a hackathon, you know how fun working on projects and learning in a fast-paced environment can be. There’s tons of technical workshops, speakers, mentors, great people, free food, energy drinks, hardware, and fun events. Maybe a bit of sleep too :)
 A lot of work goes behind organizing a large hackathon like HackPrinceton, but not all of the work is “techy”. We grapple with many interesting logistical, communication, and management challenges, and I hope to give a glimpse of what some of those entail.</description>
     </item>
     
     <item>
       <title>About Me</title>
-      <link>https://davidfan.io/about/</link>
+      <link>http://dfan.github.io/personalweb/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidfan.io/about/</guid>
+      <guid>http://dfan.github.io/personalweb/about/</guid>
       <description>Short Bio I am a computer science student at Princeton University, who is passionate about solving interdisciplinary problems using machine learning, software engineering, and quantitative methods. My background is in research and software engineering. My interests include, but are not limited to, deep learning, computer vision, high-performance computing, information storage and retrieval, optimization, education, and healthcare. Broadly, my goal is to create value in the world using my skills and talents.</description>
     </item>
     
     <item>
       <title>Contact Me</title>
-      <link>https://davidfan.io/contact/</link>
+      <link>http://dfan.github.io/personalweb/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidfan.io/contact/</guid>
+      <guid>http://dfan.github.io/personalweb/contact/</guid>
       <description>Feel free to shoot me a message at anytime!
 Email: dfan (at) davidfan.io
 GitHub: github.com/dfan
@@ -43,10 +43,10 @@ LinkedIn: linkedin.com/in/davidfan97</description>
     
     <item>
       <title>Experience</title>
-      <link>https://davidfan.io/experience/</link>
+      <link>http://dfan.github.io/personalweb/experience/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidfan.io/experience/</guid>
+      <guid>http://dfan.github.io/personalweb/experience/</guid>
       <description>Industry Amazon Web Services | Software Engineering Intern | East Palo Alto, CA
 June - August 2018
  Worked on Aurora, a distributed cloud-native relational database, and AWS&amp;rsquo; fastest growing service. Developed production cluster service to automate ticket resolution using Java, DynamoDB, and internal service APIs. Improved on-call engineer productivity. Wrote tool for enabling/disabling autoscaling policies and provisioning IOPS on pre-prod clusters.  Phosphorus | Software Engineering Intern | New York, NY</description>
@@ -54,20 +54,20 @@ June - August 2018
     
     <item>
       <title>Projects</title>
-      <link>https://davidfan.io/projects/</link>
+      <link>http://dfan.github.io/personalweb/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidfan.io/projects/</guid>
+      <guid>http://dfan.github.io/personalweb/projects/</guid>
       <description>TigerTexts | Spring 2018 Finding coursebook info for Princeton students is unnecessarily difficult. I built a web app that consolidates Princeton coursebook pricing from multiple sources, and offers third-party seller options, thus providing the most complete information on cheap textbooks. Built in Express.js, React, Redux, Python, and MongoDB.
     Lyff | PennApps Fall 2017 We built a voice bot that users can call to order a Lyft ride.</description>
     </item>
     
     <item>
       <title>Publications</title>
-      <link>https://davidfan.io/publications/</link>
+      <link>http://dfan.github.io/personalweb/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidfan.io/publications/</guid>
+      <guid>http://dfan.github.io/personalweb/publications/</guid>
       <description> Peer-Reviewed  Heart-specific Rpd3 downregulation enhances cardiac function and longevity Aging | September 2015
     Topological defects as relics of emergent continuous symmetry and Higgs condensation of disorder in ferroelectrics Nature Physics | November 2014
    Preprint  UBiT2: a client-side web-application for gene expression data analysis bioRxiv | March 2017
