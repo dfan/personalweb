@@ -14,7 +14,7 @@
 
 <div class="portfolio">
     <div class="portfolio-inner">
-        <div class="portfolio-image"><a href="{{ $url }}"><img src="{{ $image }}" alt="{{ $alt }}"></a></div>
+        <div class="portfolio-image"><a href="{{ $url }}"><img src="{{ $image | relURL }}" alt="{{ $alt }}"></a></div>
         <div class="portfolio-content">
             {{ .Inner }}
         </div>
