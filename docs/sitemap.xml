@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://davidfan.io/posts/hackprinceton/</loc>
+    <lastmod>2018-11-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidfan.io/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://davidfan.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://davidfan.io/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://davidfan.io/</loc>
+    <lastmod>2018-11-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://davidfan.io/experience/</loc>
+  </url>
+  
+  <url>
+    <loc>https://davidfan.io/posts/</loc>
+    <lastmod>2018-11-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://davidfan.io/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://davidfan.io/publications/</loc>
+  </url>
+  
+  <url>
+    <loc>https://davidfan.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -6,6 +6,7 @@ pygmentsstyle: b2 # Color-theme or style for syntax highlighting.
 pygmentscodefences: true # Enable code fence background highlighting.
 pygmentscodefencesguesssyntax: true # Enable syntax guessing for code fences without specified language.
 pygmentsUseClasses: true # new add
+publishDir: "docs"
 
 params:
   author: David Fan
