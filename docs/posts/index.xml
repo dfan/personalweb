@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on David Fan</title>
-    <link>http://dfan.github.io/personalweb/posts/</link>
+    <link>https://davidfan.io/posts/</link>
     <description>Recent content in Posts on David Fan</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 04 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://dfan.github.io/personalweb/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://davidfan.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Behind the Scenes: Challenges of Organizing HackPrinceton</title>
-      <link>http://dfan.github.io/personalweb/posts/hackprinceton/</link>
+      <link>https://davidfan.io/posts/hackprinceton/</link>
       <pubDate>Sun, 04 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://dfan.github.io/personalweb/posts/hackprinceton/</guid>
+      <guid>https://davidfan.io/posts/hackprinceton/</guid>
       <description>If you’ve ever attended a hackathon, you know how fun working on projects and learning in a fast-paced environment can be. There’s tons of technical workshops, speakers, mentors, great people, free food, energy drinks, hardware, and fun events. Maybe a bit of sleep too :)
 A lot of work goes behind organizing a large hackathon like HackPrinceton, but not all of the work is “techy”. We grapple with many interesting logistical, communication, and management challenges, and I hope to give a glimpse of what some of those entail.</description>
     </item>

@@ -1,4 +1,4 @@
-baseurl: 'http://dfan.github.io/personalweb' # Must point to GitHub, not custom domain
+baseurl: 'https://davidfan.io' # Must point to GitHub, not custom domain
 title: David Fan
 DefaultContentLanguage: en
 paginate: 20
