@@ -74,14 +74,6 @@
       });
     });
    })(jQuery);
-   // Solve problem of double click on hover event in mobile
-   $(document).ready(function() {
-    $("a").on("click touchend", function(e) {
-      var el = $(this);
-      var link = el.attr("href");
-      window.location = link;
-    });
-   });
   </script>
   {{ end }}
   </body>

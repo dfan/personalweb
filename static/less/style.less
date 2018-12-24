@@ -30,9 +30,11 @@ a {
   font-weight: 700;
   color: @darker-fg-color;
   text-decoration: none;
-  &:focus,
-  &:hover {
-    text-decoration: underline;
+  @media (hover: hover) {
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -43,9 +45,11 @@ p {
     color: @darker-fg-color;
     text-decoration: underline;
     text-underline-position: under;
-    &:focus,
-    &:hover {
-      color: @link-color;
+    @media (hover: hover) {
+      &:focus,
+      &:hover {
+        color: @link-color;
+      }
     }
   }
 }
@@ -459,15 +463,17 @@ a {
   transition: 0.25s;
 }
 
-a:before, a:after {
-  position: absolute;
-  bottom: -2px;
-  content: "";
-  display: inline-block;
-  width: 0;
-  height: 2px;
-  background: #F30034;
-  transition: 0.25s;
+@media (hover: hover) {
+  a:before, a:after {
+    position: absolute;
+    bottom: -2px;
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 2px;
+    background: #F30034;
+    transition: 0.25s;
+  }
 }
 
 a:before {
@@ -477,7 +483,6 @@ a:before {
 a:after {
   right: 50%;
 }
-
 a:hover {
   text-decoration: none;
 }
