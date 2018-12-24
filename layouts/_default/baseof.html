@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+    <meta name="description" content="{{ if .IsPage }}{{ .Site.BaseURL }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
+    
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:title" content="{{ block "og-title" . }}{{ .Site.Title }}{{ end }}">
+    <meta property="og:description" content="{{ if .IsPage }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:image" content="{{ if .IsPage }}{{ .Site.BaseURL }}{{ .Params.thumbnail }}{{ else }}{{ .Site.BaseURL }}{{ .Site.Params.thumbnail }}{{ end }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="{{ .Permalink }}">
+    <meta name="twitter:image" content="{{ if .IsPage }}{{ .Site.BaseURL }}{{ .Params.thumbnail }}{{ else }}{{ .Site.BaseURL }}{{ .Site.Params.thumbnail }}{{ end }}">
+
+    <base href="{{ .Site.BaseURL }}">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+
+    <link rel="canonical" href="{{ .Permalink }}">
+    <!-- Select part of Bootstrap CSS to support columns -->
+    <link rel="stylesheet" href="css/column.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}">
+
+    <!-- Select part of Bootstrap CSS to support columns -->
+    {{ if .Site.Params.rtl}}
+      <link rel="stylesheet" href="{{ "css/style-rtl.min.css" | absURL }}">
+    {{ end }}
+
+    <!-- Custom CSS style overrides -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <link rel="icon" type="image/png" href="{{ "/images/favicon-robot-32x32.png" | absURL }}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ "/images/favicon-robot-16x16.png" | absURL }}" sizes="16x16">
+
+    {{ if .RSSLink }}
+      <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+      <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end }}
+
+    {{ .Hugo.Generator }}
+  </head>
+
+  <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
+    <main class="wrapper">
+      {{ partial "header.html" . }}
+
+      <div class="content">
+        {{ block "content" . }}{{ end }}
+      </div>
+      {{ if or (.Site.Params.fixedbarContent) (.Site.Params.snsShare)}}
+        {{ partial "footer.html" . }}
+      {{ end }}
+    </main>
+
+    {{ template "_internal/google_analytics.html" . }}
+
+  <script src="{{ "js/app.js" | absURL }}"></script>
+  {{ with .Site.Params.fixedbarContentAfter }}
+  <script>
+  (function($) {
+    $(function() {
+      $('#privateTrigger').on('click', function() {
+        $('.private').slideToggle();
+        $('#privateTriggerText').text("{{ . }}");
+      });
+    });
+   })(jQuery);
+  </script>
+  {{ end }}
+  </body>
+</html>

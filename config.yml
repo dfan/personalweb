@@ -1,0 +1,57 @@
+baseurl: 'https://davidfan.io'
+title: David Fan
+DefaultContentLanguage: en
+paginate: 20
+pygmentsstyle: b2 # Color-theme or style for syntax highlighting.
+pygmentscodefences: true # Enable code fence background highlighting.
+pygmentscodefencesguesssyntax: true # Enable syntax guessing for code fences without specified language.
+pygmentsUseClasses: true # new add
+
+params:
+  author: David Fan
+  description: David Fan's personal website
+  keywords: >-
+    David,Fan,Princeton,University,Amazon,Harvard-MIT HST,HackPrinceton,Science
+    Olympiad,Computer Vision,Deep Learning,Machine Learning,Software
+    Engineering, Bioinformatics,Research
+  info: CS Student at Princeton
+  avatarurl: images/david.jpg
+  footercontent:
+  fixedbarContent: # for footer
+  fixedbarContentAfter: # for footer
+  snsShare: false # enable social media icons on bottom footer
+  thumbnail: images/tn.png # default sns thumbnail
+  itemscentered: true
+  rtl: false
+  langseparator: '|'
+  social:
+    - name: Github
+      weight: 1
+      url: 'https://github.com/dfan/'
+      icon: "fab fa-github fa-2x"
+    - name: Medium
+      weight: 2
+      url: 'https://medium.com/@davidfan/'
+      icon: "fab fa-medium-m fa-2x"
+    - name: LinkedIn
+      weight: 3
+      url: 'https://linkedin.com/in/davidfan97/'
+      icon: "fab fa-linkedin-in fa-2x"
+    - name: Email
+      weight: 4
+      url: 'mailto:dfan@davidfan.io'
+      icon: "fas fa-envelope fa-2x"
+menu:
+  main:
+    - name: About
+      weight: 1
+      url: about
+    - name: Blog
+      weight: 2
+      url: posts
+    - name: Projects
+      weight: 3
+      url: projects
+    - name: Contact
+      weight: 4
+      url: contact
