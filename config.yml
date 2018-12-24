@@ -20,7 +20,7 @@ params:
   fixedbarContent: # for footer
   fixedbarContentAfter: # for footer
   snsShare: false # enable social media icons on bottom footer
-  thumbnail: images/tn.png # default sns thumbnail
+  thumbnail: images/thumbnails/home.png # default sns thumbnail
   itemscentered: true
   rtl: false
   langseparator: '|'
@@ -46,12 +46,15 @@ menu:
     - name: About
       weight: 1
       url: about
-    - name: Blog
+    - name: Experience
       weight: 2
-      url: posts
+      url: experience
     - name: Projects
       weight: 3
       url: projects
-    - name: Contact
+    - name: Publications
       weight: 4
-      url: contact
+      url: publications
+    - name: Blog
+      weight: 5
+      url: posts

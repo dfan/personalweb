@@ -18,7 +18,7 @@ We built a voice bot that users can call to order a Lyft ride. This is useful wh
 
 {{% portfolio image="/images/portfolio/scioly.jpg" url="https://scioly.princeton.edu" alt="Princeton University Science Olympiad" %}}
 ### [Princeton University Science Olympiad | Fall 2016 - current](https://scioly.princeton.edu)
-In Fall 2016, I co-founded a tournament that hosts 800 high school students from around the nation each year. I led a team of 8 undergrad students and 120 volunteers in the execution of 23 competition events, and raised a budget of $10,000. In 2017, we became the first college-run tournament nationwide to waive registration fees. I developed the static website in HTML/CSS/Javascript.
+In Fall 2016, I **co-founded** a tournament that hosts 800 high school students from around the nation each year. I led a team of 8 undergrad students and 120 volunteers in the execution of 23 competition events, and raised a budget of $10,000. In 2017, we became the first college-run tournament nationwide to waive registration fees. I developed the static website in HTML/CSS/Javascript.
 We have received the following press:  
 1. [Scientific American](https://blogs.scientificamerican.com/budding-scientist/when-former-competitors-get-to-design-tournaments-of-their-own/)  
 2. [Princeton University](https://www.princeton.edu/news/2018/02/26/science-olympiad-tournament-hosts-800-high-school-students-across-us)  
@@ -26,7 +26,7 @@ We have received the following press:
 
 {{% portfolio image="/images/portfolio/hackprinceton.png" url="https://hackprinceton.com" alt="HackPrinceton" %}}
 ### [HackPrinceton | Fall 2016 - Spring 2018](https://hackprinceton.com)
-HackPrinceton is Princeton's biannual student-run hackathon which hosts 1,100 students per year. As co-director From Fall 2017-Spring 2018, I led a team of 30 undergraduate organizers and combined budget of $150,000.
+HackPrinceton is Princeton's biannual student-run hackathon which hosts 1,100 students per year. As **co-director** From Fall 2017-Spring 2018, I led a team of 30 undergraduate organizers and combined budget of $150,000.
 From Fall 2016-Spring 2017, I was an organizer and coordinated bus routes, workshops, prizes, and mentorship. Below is a sample of the press we have received:  
 1. [Business Insider](https://www.businessinsider.com/students-solve-facebooks-fake-news-problem-in-36-hours-2016-11)  
 2. [Princeton School of Engineering](https://engineering.princeton.edu/news/2018/04/18/teams-code-new-ideas-hackprinceton)  
@@ -40,15 +40,5 @@ I worked with [Dr. Jean Fan](https://jef.works/) to develop an open-source web a
 
 {{% portfolio image="/images/portfolio/cwas.png" url="https://github.com/dfan/CWAS_Census" alt="CWAS" %}}
 ### [Claims-Wide Association Study | Summer 2016](https://github.com/dfan/CWAS_Census)
-I worked with [Dr. Isaac Kohane](http://dbmi.hms.harvard.edu/person/faculty/zak-kohane) and [Dr. Arjun Manrai](https://scholar.google.com/citations?user=uzzY6UAAAAAJ&hl=en) to develope a new association study called "claims-wide association study (CWAS)" - like genome-wide association studies (GWAS), but for insurance claims. I built a data visualization tool for plotting heatmaps of the USA from parsed AETNA insurance claims, at multiple levels of geographic specificity (zipcode, county, state, regional). I used R, MySQL, and the Shiny web framework.
-{{% /portfolio %}}
-
-{{% portfolio image="/images/portfolio/aging.png" url="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4600623/" alt="Aging" %}}
-### [Heart-specific Rpd3 downregulation enhances cardiac function and longevity | Summer 2014](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4600623/)
-Investigated effects of the Ras•GTP-Raf-MEK-ERK signaling pathway in Drosophila fruit flies on organismal and organ senescence. Conducted lifespan and stress (starvation, oxidative and heat) assays on flies with transgenes expressing varied levels of Rpd3 protein in the heart tissue. Also conducted heartbeat measurements on flies throughout various stages in their lifespan to analyze heart-function decline with age. This work led to coauthorship in a paper published in Aging, and semifinalist status in the 2015 Intel Science Talent Search (STS).
-{{% /portfolio %}}
-
-{{% portfolio image="/images/portfolio/naturephysics.png" url="https://www.nature.com/articles/nphys3142" alt="Nature Physics" %}}
-### [Topological defects as relics of emergent continuous symmetry and Higgs condensation of disorder in ferroelectrics | Summer 2013](https://www.nature.com/articles/nphys3142)
-Explored symmetry-breaking phase transitions in multiferroic materials (i.e. rare-earth hexagonal manganites). Polished and depth-profiled these materials to image their topological defect distribution. This work led to coauthorship in a paper published in Nature Physics.
+I worked with [Prof. Isaac Kohane](http://dbmi.hms.harvard.edu/person/faculty/zak-kohane) and [Dr. Arjun Manrai](https://scholar.google.com/citations?user=uzzY6UAAAAAJ&hl=en) to develope a new association study called "claims-wide association study (CWAS)" - like genome-wide association studies (GWAS), but for insurance claims. I built a data visualization tool for plotting heatmaps of the USA from parsed AETNA insurance claims, at multiple levels of geographic specificity (zipcode, county, state, regional). Built in R, MySQL, and the Shiny web framework.
 {{% /portfolio %}}
