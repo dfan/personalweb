@@ -33,8 +33,8 @@ From Fall 2016-Spring 2017, I was an organizer and coordinated bus routes, works
 3. [Princeton Entreneurship Council](https://entrepreneurs.princeton.edu/news/weekly-profile-wednesday-david-fan-19)  
 {{% /portfolio %}}
 
-{{% portfolio image="/images/portfolio/ubit2.png" url="http://pklab.med.harvard.edu/jean/ubit2/index.html" alt="UBiT2" %}}
-### [UBiT2 | Summer 2016](http://pklab.med.harvard.edu/jean/ubit2/index.html)
+{{% portfolio image="/images/portfolio/ubit2.png" url="http://ubit2.com/" alt="UBiT2" %}}
+### [UBiT2 | Summer 2016](http://ubit2.com/)
 I worked with [Dr. Jean Fan](https://jef.works/) to develop an open-source web application for client-side RNA-seq and qPCR data analysis. All computation and data visualization is done client-side, thus providing a secure and fast environment for bioinformatics that involves no server. Built in HTML, CSS, and Javascript.
 {{% /portfolio %}}
 

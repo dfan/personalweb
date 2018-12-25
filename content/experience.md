@@ -24,7 +24,7 @@ templates.
 
 ---------------------------
 ### Academic/Research
-[**Princeton Vision and Learning Lab**](http://pvl.cs.princeton.edu/) | Undergrad Researcher | Princeton, NJ
+[**Princeton Vision and Learning Lab**](http://pvl.cs.princeton.edu/) | Undergrad Researcher | Princeton, NJ  
 *September 2018 - current*
 
 - Doing a senior thesis in computer vision and deep learning, related to single-view 3D reconstruction: the problem of recovering 3D structure from a single 2D image.
@@ -37,10 +37,10 @@ templates.
     - Built a data visualization tool for plotting heatmaps of the USA from parsed AETNA insurance claims, at multiple levels of geographic specificity (zipcode, county, state, regional)
     - Used R, MySQL, and the Shiny web framework; code [here](https://github.com/dfan/CWAS_Census).
 
-2. [User-friendly Bioinformatics Tools (UBiT2)](http://pklab.med.harvard.edu/jean/ubit2/index.html)
+2. [User-friendly Bioinformatics Tools (UBiT2)](http://ubit2.com/)
     - Worked with [Dr. Jean Fan](https://jef.works/) to develop an open-source web application for client-side RNA-seq and qPCR data analysis.
     - All computation and data visualization is done client-side, thus providing a secure and fast environment for bioinformatics that involves no server.
-    - Built in HTML, CSS, and Javascript. Code [here](https://github.com/JEFworks/ubit2).
+    - Built in HTML, CSS, and Javascript. Code [here](http://ubit2.com/).
     - Submitted manuscript to [bioRxiv](https://www.biorxiv.org/content/early/2017/03/22/118992).
 
 [**Rutgers New Jersey Medical School**](http://njms.rutgers.edu/) | HS Research Intern | Newark, NJ  
