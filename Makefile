@@ -32,5 +32,6 @@ demo: build
 	cd demo && hugo serve -D
 
 clean:
-	rm -f $(CSS_DIR)/*.css
+	rm -f $(CSS_DIR)/style-rtl.min.css
+	rm -f $(CSS_DIR)/style.min.css
 	rm -rf demo
