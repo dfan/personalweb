@@ -3,17 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://davidfan.io/posts/scioly/</loc>
+    <loc>https://davidfan.io/blog/scioly/</loc>
     <lastmod>2018-12-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://davidfan.io/posts/hackprinceton/</loc>
+    <loc>https://davidfan.io/blog/hackprinceton/</loc>
     <lastmod>2018-11-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://davidfan.io/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://davidfan.io/blog/</loc>
+    <lastmod>2018-12-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -33,12 +39,6 @@
   
   <url>
     <loc>https://davidfan.io/experience/</loc>
-  </url>
-  
-  <url>
-    <loc>https://davidfan.io/posts/</loc>
-    <lastmod>2018-12-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
