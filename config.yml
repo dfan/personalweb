@@ -58,4 +58,4 @@ menu:
       url: publications
     - name: Blog
       weight: 5
-      url: posts
+      url: blog
