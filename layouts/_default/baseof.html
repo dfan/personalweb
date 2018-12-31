@@ -29,15 +29,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
     <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
-    <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}">
+    <link rel="stylesheet" href="{{ "css/style.min.css" | relURL }}">
 
     <!-- Select part of Bootstrap CSS to support columns -->
     {{ if .Site.Params.rtl}}
-      <link rel="stylesheet" href="{{ "css/style-rtl.min.css" | absURL }}">
+      <link rel="stylesheet" href="{{ "css/style-rtl.min.css" | relURL }}">
     {{ end }}
 
     <!-- Custom CSS style overrides -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
 
     <link rel="icon" type="image/png" href="{{ "/images/favicons/favicon-opensource-32x32.png" | relURL }}" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ "/images/favicons/favicon-opensource-16x16.png" | relURL }}" sizes="16x16">
@@ -64,7 +64,7 @@
 
     {{ template "_internal/google_analytics.html" . }}
 
-  <script src="{{ "js/app.js" | absURL }}"></script>
+  <script src="{{ "js/app.js" | relURL }}"></script>
   {{ with .Site.Params.fixedbarContentAfter }}
   <script>
   (function($) {
