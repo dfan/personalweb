@@ -15,10 +15,10 @@ body {
   display: flex;
   color: @fg-color;
   background-color: @bg-color;
-  font-family: 'Fira Mono', monospace;
+  font-family: 'Source Sans Pro';
   font-size: 1.6em;
   font-weight: 400;
-  letter-spacing: 0.0625em;
+  /* Only if using Fira-Mono in body letter-spacing: 0.0625em; */
   line-height: 1.8em;
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     font-size: 1.4em;
@@ -60,6 +60,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: 'Fira Mono', monospace;
   color: @darker-fg-color;
   text-transform: uppercase;
   letter-spacing: 0.0625em;
@@ -185,6 +186,7 @@ img {
 }
 
 .navigation {
+  font-family: 'Fira Mono', monospace;
   height: 6.0rem;
   width: 100%;
   a {
