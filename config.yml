@@ -9,6 +9,7 @@ pygmentsUseClasses: true # new add
 publishDir: "docs"
 permalinks:
   blog: /blog/:year/:month/:title/
+googleAnalytics: 'UA-67735838-1'
 
 params:
   author: David Fan
