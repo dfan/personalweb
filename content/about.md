@@ -35,6 +35,7 @@ Senior Thesis in Computer Vision under supervision of [Prof. Jia Deng](http://ww
 **Mathematics**  
 - MAT 201: Multivariable Calculus (Fall 2015)  
 - MAT 202: Linear Algebra (Spring 2016)  
+- ORF 245: Statistics (Spring 2016)  
 - [ORF 309: Probability and Stochastic Systems (Spring 2017)](https://registrar.princeton.edu/course-offerings/course_details.xml?courseid=007999&term=1194)  
 - [ORF 363: Convex Optimization (Fall 2018)](http://aaa.princeton.edu/orf363)  
 
