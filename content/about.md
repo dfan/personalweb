@@ -23,7 +23,8 @@ Senior Thesis in Computer Vision under supervision of [Prof. Jia Deng](http://ww
 **Languages**: Java, Python, R, OCaml, C, Go, JavaScript  
 **Libraries/Frameworks**: PyTorch, Tensorflow, Shiny, ggplot2, Numpy, Pandas, Bootstrap, jQuery, d3, Express.js  
 **Web Development**: HTML, CSS, Javascript, React, Flask, MongoDB, MySQL  
-**Additional Tools**: Git, AWS, Jupyter, UNIX, LaTeX
+**Additional Tools**: Git, AWS, Jupyter, UNIX, LaTeX  
+**Keywords**: Deep Learning, Software Engineering, Research, Data Visualization, Web Development
 
 ---------------------------
 ### Coursework
