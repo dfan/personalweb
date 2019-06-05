@@ -14,7 +14,7 @@ I am fluent in English and Mandarin Chinese. My hobbies include tennis, ping pon
 ---------------------------
 ### Education
 **Princeton University**  | 2015-2019  
-BSE in Computer Science, Minor in Statistics and Machine Learning  
+B.S.E. in Computer Science and Minor in Statistics and Machine Learning | *Magna Cum Laude*  
 Senior Thesis in Computer Vision under supervision of [Prof. Jia Deng](http://www.cs.princeton.edu/~jiadeng/)
 
 ---------------------------
