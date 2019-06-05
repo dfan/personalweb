@@ -27,7 +27,8 @@ templates.
 [**Princeton Vision and Learning Lab**](http://pvl.cs.princeton.edu/) | Undergrad Researcher | Princeton, NJ  
 *September 2018 - current*
 
-- Doing a senior thesis in computer vision and deep learning, related to single-view 3D reconstruction: the problem of recovering 3D structure from a single 2D image.
+- Did an undergraduate senior thesis in computer vision and deep learning, related to single-view 3D reconstruction: the problem of recovering 3D structure from a single 2D image.
+- Submitted to NeurIPS 2019 conference.
 
 [**Harvard-MIT HST**](http://dbmi.hms.harvard.edu/) | Bioinformatics Research Intern | Boston, MA  
 *June - August 2016*
