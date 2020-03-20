@@ -7,7 +7,14 @@ description = "experience"
 
 ---------------------------
 ### Industry
-[**Amazon Web Services**](https://aws.amazon.com) | Software Engineering Intern | East Palo Alto, CA  
+[**Amazon Web Services (AI)**](https://aws.amazon.com) | Software Engineer | Seattle, WA  
+*August 2019 - present*
+
+- [Elastic Inference](https://aws.amazon.com/machine-learning/elastic-inference/) reduces inference costs by enabling users to flexibly provision GPU compute.
+- Added logging metrics and launched canaries to support new EC2 G4 instance family.
+- Launched Elastic Inference-enabled PyTorch framework for SageMaker, EC2, and ECS (see my AWS [blog post](https://aws.amazon.com/blogs/machine-learning/reduce-ml-inference-costs-on-amazon-sagemaker-for-pytorch-models-using-amazon-elastic-inference/)). Implemented TorchScript graph validation, shipped updated AWS Deep Learning Conda environments and Docker containers, benchmarked performance for vision and NLP models on multiple platforms, and wrote technical blog post.
+
+[**Amazon Web Services (Databases)**](https://aws.amazon.com) | Software Engineering Intern | East Palo Alto, CA  
 *June - August 2018*
 
 - Worked on [Aurora](https://aws.amazon.com/rds/aurora/), a distributed cloud-native relational database, and AWS' fastest growing service.
@@ -27,8 +34,8 @@ templates.
 [**Princeton Vision and Learning Lab**](http://pvl.cs.princeton.edu/) | Undergrad Researcher | Princeton, NJ  
 *September 2018 - current*
 
-- Did an undergraduate senior thesis in computer vision and deep learning, related to single-view 3D reconstruction: the problem of recovering 3D structure from a single 2D image.
-- Submitted to NeurIPS 2019 conference.
+- Did an undergraduate senior thesis in computer vision and deep learning, related to single-view 3D vision.
+- Paper accepted to CVPR 2020 conference.
 
 [**Harvard-MIT HST**](http://dbmi.hms.harvard.edu/) | Bioinformatics Research Intern | Boston, MA  
 *June - August 2016*

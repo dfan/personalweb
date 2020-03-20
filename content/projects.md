@@ -5,6 +5,13 @@ thumbnail = "images/thumbnails/projects.png"
 description = "projects"
 +++
 
+{{% portfolio image="/images/portfolio/coming_soon.png" alt="CVPR 2020" %}}
+### Coming Soon
+Lack of high-quality, diverse, and large-scale data impedes research in many fields, including single-image 3D vision. For my senior thesis, I created a novel large-scale dataset for single-image 3D in the wild. I implemented a pipeline for crowdsourcing dense pixel-wise 3D ground truths from sparse annotations, and trained state-of-art deep learning models to benchmark our datasets fo rmultiple tasks. The dataset improves performance in multiple visual tasks, and also introduces new tasks for research.
+
+This work was accepted to CVPR 2020 and advised by Professor Jia Deng.
+{{% /portfolio %}}
+
 {{% portfolio image="/images/portfolio/tigertexts.png" url="https://tigertexts.io/about" alt="TigerTexts" %}}
 ### [TigerTexts | Spring 2018](https://tigertexts.io/about)
 Finding coursebook info for Princeton students is unnecessarily difficult. I built a web app that consolidates Princeton coursebook pricing from multiple sources, and offers third-party seller options, thus providing the most complete information on cheap textbooks. Built in Express.js, React, Redux, Python, and MongoDB.

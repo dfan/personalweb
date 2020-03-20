@@ -35,7 +35,8 @@ A lot of work goes behind organizing a large hackathon like HackPrinceton, but n
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidfan.io/about/</guid>
-      <description>Short Bio I am a computer science student at Princeton University, who is passionate about solving interdisciplinary problems using machine learning, software engineering, and quantitative methods. My background is in research and software engineering. My interests include, but are not limited to, deep learning, computer vision, high-performance computing, information storage and retrieval, optimization, education, and healthcare. Broadly, my goal is to create value in the world using my skills and talents.</description>
+      <description>Short Bio I graduated Magna Cum Laude from Princeton University in 2019 with a B.S.E in computer science. I am passionate about advancing the state-of-art in computer vision and deep learning research, as well as reducing the computational and domain knowledge barriers that prevent large-scale production use of machine learning. I am happiest when doing a mix of hardcore research and engineering.
+My current research interests include, but are not limited to, 3D perception, meta learning, multi-task learning, representation learning, AutoML, and the intersection between vision + language.</description>
     </item>
     
     <item>
@@ -56,9 +57,9 @@ LinkedIn: linkedin.com/in/davidfan97</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidfan.io/experience/</guid>
-      <description>Industry Amazon Web Services | Software Engineering Intern | East Palo Alto, CA
-June - August 2018
- Worked on Aurora, a distributed cloud-native relational database, and AWS&amp;rsquo; fastest growing service. Developed production cluster service to automate ticket resolution using Java, DynamoDB, and internal service APIs. Improved on-call engineer productivity. Wrote tool for enabling/disabling autoscaling policies and provisioning IOPS on pre-prod clusters.  Phosphorus | Software Engineering Intern | New York, NY</description>
+      <description>Industry Amazon Web Services (AI) | Software Engineer | Seattle, WA
+August 2019 - present
+ Elastic Inference reduces inference costs by enabling users to flexibly provision GPU compute. Added logging metrics and launched canaries to support new EC2 G4 instance family. Launched Elastic Inference-enabled PyTorch framework for SageMaker, EC2, and ECS (see my AWS blog post). Implemented TorchScript graph validation, shipped updated AWS Deep Learning Conda environments and Docker containers, benchmarked performance for vision and NLP models on multiple platforms, and wrote technical blog post.</description>
     </item>
     
     <item>
@@ -67,8 +68,7 @@ June - August 2018
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidfan.io/projects/</guid>
-      <description>TigerTexts | Spring 2018 Finding coursebook info for Princeton students is unnecessarily difficult. I built a web app that consolidates Princeton coursebook pricing from multiple sources, and offers third-party seller options, thus providing the most complete information on cheap textbooks. Built in Express.js, React, Redux, Python, and MongoDB.
-    Lyff | PennApps Fall 2017 We built a voice bot that users can call to order a Lyft ride.</description>
+      <description>Coming Soon Lack of high-quality, diverse, and large-scale data impedes research in many fields, including single-image 3D vision. For my senior thesis, I created a novel large-scale dataset for single-image 3D in the wild. I implemented a pipeline for crowdsourcing dense pixel-wise 3D ground truths from sparse annotations, and trained state-of-art deep learning models to benchmark our datasets fo rmultiple tasks. The dataset improves performance in multiple visual tasks, and also introduces new tasks for research.</description>
     </item>
     
     <item>
@@ -77,7 +77,8 @@ June - August 2018
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidfan.io/publications/</guid>
-      <description> Peer-Reviewed  Heart-specific Rpd3 downregulation enhances cardiac function and longevity Aging | September 2015
+      <description> Peer-Reviewed  Paper about 3D Vision CVPR | June 2020
+    Heart-specific Rpd3 downregulation enhances cardiac function and longevity Aging | September 2015
     Topological defects as relics of emergent continuous symmetry and Higgs condensation of disorder in ferroelectrics Nature Physics | November 2014
    Preprint  UBiT2: a client-side web-application for gene expression data analysis bioRxiv | March 2017
    </description>

@@ -7,7 +7,9 @@ description = "about"
 
 ---------------------------
 ### Short Bio
-I am a computer science student at Princeton University, who is passionate about solving interdisciplinary problems using machine learning, software engineering, and quantitative methods. My background is in research and software engineering. My interests include, but are not limited to, deep learning, computer vision, high-performance computing, information storage and retrieval, optimization, education, and healthcare. Broadly, my goal is to create value in the world using my skills and talents.
+I graduated *Magna Cum Laude* from Princeton University in 2019 with a B.S.E in computer science. I am passionate about advancing the state-of-art in computer vision and deep learning research, as well as reducing the computational and domain knowledge barriers that prevent large-scale production use of machine learning. I am happiest when doing a mix of hardcore research and engineering.
+
+My current research interests include, but are not limited to, 3D perception, meta learning, multi-task learning, representation learning, AutoML, and the intersection between vision + language.
 
 I am fluent in English and Mandarin Chinese. My hobbies include tennis, ping pong, clarinet, nature walks, hacking, and writing.
 
@@ -15,7 +17,7 @@ I am fluent in English and Mandarin Chinese. My hobbies include tennis, ping pon
 ### Education
 **Princeton University**  | 2015-2019  
 B.S.E. in Computer Science and Minor in Statistics and Machine Learning | *Magna Cum Laude*  
-Senior Thesis in Computer Vision under supervision of [Prof. Jia Deng](http://www.cs.princeton.edu/~jiadeng/)
+Senior Thesis in Computer Vision under supervision of [Prof. Jia Deng](http://www.cs.princeton.edu/~jiadeng/). Accepted to CVPR 2020 (poster).
 
 ---------------------------
 
@@ -24,7 +26,7 @@ Senior Thesis in Computer Vision under supervision of [Prof. Jia Deng](http://ww
 **Libraries/Frameworks**: PyTorch, Tensorflow, Shiny, ggplot2, Numpy, Pandas, Bootstrap, jQuery, d3, Express.js  
 **Web Development**: HTML, CSS, Javascript, React, Flask, MongoDB, MySQL  
 **Additional Tools**: Git, AWS, Jupyter, UNIX, LaTeX  
-**Keywords**: Deep Learning, Software Engineering, Research, Data Visualization, Web Development
+**Keywords**: Computer Vision, Deep Learning, Software Engineering, Research, Data Visualization, Web Development
 
 ---------------------------
 ### Coursework
