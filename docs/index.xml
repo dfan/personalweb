@@ -68,7 +68,7 @@ August 2019 - present
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidfan.io/projects/</guid>
-      <description>Coming Soon Lack of high-quality, diverse, and large-scale data impedes research in many fields, including single-image 3D vision. For my senior thesis, I created a novel large-scale dataset for single-image 3D in the wild. I implemented a pipeline for crowdsourcing dense pixel-wise 3D ground truths from sparse annotations, and trained state-of-art deep learning models to benchmark our datasets fo rmultiple tasks. The dataset improves performance in multiple visual tasks, and also introduces new tasks for research.</description>
+      <description>OASIS: A Large-Scale Dataset for Single-Image 3D in the Wild Lack of high-quality, diverse, and large-scale data impedes research in many fields, including single-image 3D vision. For my senior thesis, I helped create OASIS, a large-scale dataset for single-image 3D in the wild. I implemented a pipeline for crowdsourcing dense pixel-wise 3D ground truths from sparse annotations, and trained state-of-art deep learning models to benchmark our dataset for multiple tasks.</description>
     </item>
     
     <item>
@@ -77,11 +77,13 @@ August 2019 - present
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidfan.io/publications/</guid>
-      <description> Peer-Reviewed  Paper about 3D Vision CVPR | June 2020
-    Heart-specific Rpd3 downregulation enhances cardiac function and longevity Aging | September 2015
-    Topological defects as relics of emergent continuous symmetry and Higgs condensation of disorder in ferroelectrics Nature Physics | November 2014
-   Preprint  UBiT2: a client-side web-application for gene expression data analysis bioRxiv | March 2017
-   </description>
+      <description>Peer-Reviewed  OASIS: A Large-Scale Dataset for Single-Image 3D in the Wild CVPR | 2020
+[Paper upcoming]
+    Heart-specific Rpd3 downregulation enhances cardiac function and longevity Aging | 2015
+Paper
+    Topological defects as relics of emergent continuous symmetry and Higgs condensation of disorder in ferroelectrics Nature Physics | 2014
+Paper
+   Preprint  UBiT2: a client-side web-application for gene expression data analysis bioRxiv | 2017</description>
     </item>
     
   </channel>
