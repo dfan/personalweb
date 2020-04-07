@@ -7,4 +7,4 @@ Installation and Development:
 2. Run local development server: ``hugo server``
 3. Build static site into ``/docs`` folder before pushing new changes: ``hugo`` (directory is configured by default in the yaml)
 
-I use ```mediumexporter```, a [NPM package](https://www.npmjs.com/package/mediumexporter) to convert Medium posts into markdown for the blog.
+I use ```mediumexporter```, a [NPM package](https://www.npmjs.com/package/mediumexporter) to convert Medium posts into markdown for the blog. Sample usage: `mediumexporter yoururl > yourfile.md`.
