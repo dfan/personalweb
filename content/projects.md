@@ -5,7 +5,7 @@ thumbnail = "images/thumbnails/projects.png"
 description = "projects"
 +++
 
-{{% portfolio image="/images/portfolio/coming_soon.png" alt="CVPR 2020" %}}
+{{% portfolio image="/images/portfolio/oasis.png" alt="CVPR 2020" %}}
 ### OASIS: A Large-Scale Dataset for Single-Image 3D in the Wild
 Lack of high-quality, diverse, and large-scale data impedes research in many fields, including single-image 3D vision. For my senior thesis, I helped create OASIS, a large-scale dataset for single-image 3D in the wild. I implemented a pipeline for crowdsourcing dense pixel-wise 3D ground truths from sparse annotations, and trained state-of-art deep learning models to benchmark our dataset for multiple tasks. The dataset improves performance in multiple visual tasks, and also introduces new tasks for research.
 
@@ -26,7 +26,7 @@ We built a voice bot that users can call to order a Lyft ride. This is useful wh
 {{% /portfolio %}}
 
 {{% portfolio image="/images/portfolio/scioly.jpg" url="https://scioly.princeton.edu" alt="Princeton University Science Olympiad" %}}
-### [Princeton University Science Olympiad | Fall 2016 - current](https://scioly.princeton.edu)
+### [Princeton University Science Olympiad | Fall 2016](https://scioly.princeton.edu)
 In Fall 2016, I **co-founded** a tournament that hosts 800 high school students from around the nation each year. I led a team of 8 undergrad students and 120 volunteers in the execution of 23 competition events, and raised a budget of $10,000. In 2017, we became the first college-run tournament nationwide to waive registration fees. I developed the static website in HTML/CSS/Javascript.
 We have received the following press:  
 1. [Scientific American](https://blogs.scientificamerican.com/budding-scientist/when-former-competitors-get-to-design-tournaments-of-their-own/)  
