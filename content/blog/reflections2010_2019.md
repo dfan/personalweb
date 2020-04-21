@@ -4,8 +4,6 @@ title = "Reflections on 2010–2019"
 math = "false"
 +++
 
-# Reflections on 2010–2019
-
 Time flies! In 2010, I was in 7th grade and just beginning to mature. In 2015, I graduated from high school in NJ and entered college. In mid-2019, I graduated from college and moved from NJ to the West Coast for my first full-time job. To commemorate the ups-and-downs of the past decade, I decided to reflect on my experiences and what I learned from them. Those takeaways are condensed into four themes, in no particular order.
 
 ### 1. Setbacks are often blessings in disguise
