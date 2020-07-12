@@ -11,12 +11,16 @@ Lack of high-quality, diverse, and large-scale data impedes research in many fie
 
 This work was accepted to CVPR 2020 and advised by Professor Jia Deng.
 
-[Project page upcoming]
+[[Paper]](https://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_OASIS_A_Large-Scale_Dataset_for_Single_Image_3D_in_the_CVPR_2020_paper.pdf), [[Supplementary Material]](https://openaccess.thecvf.com/content_CVPR_2020/supplemental/Chen_OASIS_A_Large-Scale_CVPR_2020_supplemental.pdf), [[Project page]](https://https//oasis.cs.princeton.edu/)
+
 {{% /portfolio %}}
 
-{{% portfolio image="/images/portfolio/tigertexts.png" url="https://tigertexts.io/about" alt="TigerTexts" %}}
-### [TigerTexts | Spring 2018](https://tigertexts.io/about)
+{{% portfolio image="/images/portfolio/tigertexts.png" url="https://tigertexts.herokuapp.com/about" alt="TigerTexts" %}}
+### [TigerTexts | Spring 2018](https://tigertexts.herokuapp.com/about)
 Finding coursebook info for Princeton students is unnecessarily difficult. I built a web app that consolidates Princeton coursebook pricing from multiple sources, and offers third-party seller options, thus providing the most complete information on cheap textbooks. Built in Express.js, React, Redux, Python, and MongoDB.
+
+[Documentation](https://tigertexts.herokuapp.com/public/guide.pdf) \\
+[Technical Report](https://tigertexts.herokuapp.com/public/report.pdf)
 {{% /portfolio %}}
 
 {{% portfolio image="/images/portfolio/lyff.png" url="https://devpost.com/software/lyff" alt="Lyff" %}}

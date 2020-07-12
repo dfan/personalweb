@@ -7,12 +7,18 @@ description = "experience"
 
 ---------------------------
 ### Industry
+[**Amazon**](https://amazon.com) | Research Engineer | Seattle, WA  
+*July 2020 - present*
+
+- Doing computer vision research with a current focus on video understanding for [Prime Video](https://www.amazon.com/gp/video/offers).
+
 [**Amazon Web Services (AI)**](https://aws.amazon.com) | Software Engineer | Seattle, WA  
-*August 2019 - present*
+*August 2019 - July 2020*
 
 - [Elastic Inference](https://aws.amazon.com/machine-learning/elastic-inference/) reduces inference costs by enabling users to flexibly provision GPU compute.
 - Added logging metrics and launched canaries to support new EC2 G4 instance family.
 - Launched Elastic Inference-enabled PyTorch framework for SageMaker, EC2, and ECS (see my AWS [blog post](https://aws.amazon.com/blogs/machine-learning/reduce-ml-inference-costs-on-amazon-sagemaker-for-pytorch-models-using-amazon-elastic-inference/)). Implemented TorchScript graph validation, shipped updated AWS Deep Learning Conda environments and Docker containers, benchmarked performance for vision and NLP models on multiple platforms, and wrote technical blog post.
+- Created proof-of-concept for building and integrating TensorRT-enabled TensorFlow 2.1 into the inference engine. Reduced latency by up to 70% compared to FP32 native TensorFlow in benchmarks.
 
 [**Amazon Web Services (Databases)**](https://aws.amazon.com) | Software Engineering Intern | East Palo Alto, CA  
 *June - August 2018*

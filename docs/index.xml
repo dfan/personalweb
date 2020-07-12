@@ -66,9 +66,11 @@ LinkedIn: linkedin.com/in/davidfan97</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidfan.io/experience/</guid>
-      <description>Industry Amazon Web Services (AI) | Software Engineer | Seattle, WA
-August 2019 - present
- Elastic Inference reduces inference costs by enabling users to flexibly provision GPU compute. Added logging metrics and launched canaries to support new EC2 G4 instance family. Launched Elastic Inference-enabled PyTorch framework for SageMaker, EC2, and ECS (see my AWS blog post). Implemented TorchScript graph validation, shipped updated AWS Deep Learning Conda environments and Docker containers, benchmarked performance for vision and NLP models on multiple platforms, and wrote technical blog post.</description>
+      <description>Industry Amazon | Research Engineer | Seattle, WA
+July 2020 - present
+ Doing computer vision research with a current focus on video understanding for Prime Video.  Amazon Web Services (AI) | Software Engineer | Seattle, WA
+August 2019 - July 2020
+ Elastic Inference reduces inference costs by enabling users to flexibly provision GPU compute. Added logging metrics and launched canaries to support new EC2 G4 instance family.</description>
     </item>
     
     <item>
@@ -87,11 +89,11 @@ August 2019 - present
       
       <guid>https://davidfan.io/publications/</guid>
       <description>Peer-Reviewed  OASIS: A Large-Scale Dataset for Single-Image 3D in the Wild CVPR | 2020
-[Paper upcoming]
+[Paper], [Supplementary Material], [Project page]
     Heart-specific Rpd3 downregulation enhances cardiac function and longevity Aging | 2015
-Paper
+[Paper]
     Topological defects as relics of emergent continuous symmetry and Higgs condensation of disorder in ferroelectrics Nature Physics | 2014
-Paper
+[Paper]
    Preprint  UBiT2: a client-side web-application for gene expression data analysis bioRxiv | 2017</description>
     </item>
     
