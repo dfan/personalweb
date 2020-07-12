@@ -18,7 +18,7 @@ params:
     David,Fan,Princeton,University,Amazon,Harvard-MIT HST,HackPrinceton,Science
     Olympiad,Computer Vision,Deep Learning,Machine Learning,Software
     Engineering, Bioinformatics,Research
-  info: Software Engineer at AWS AI # CS Student at Princeton
+  info: Research Engineer at Amazon #Software Engineer at AWS AI # CS Student at Princeton
   avatarurl: images/david.jpg
   footercontent:
   fixedbarContent: # for footer

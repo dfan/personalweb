@@ -61,6 +61,6 @@ Senior Thesis in Computer Vision under supervision of [Prof. Jia Deng](http://ww
 - [COS 432: Information Security (Fall 2017)](https://www.cs.princeton.edu/courses/archive/fall17/cos432/)  
 
 ---------------------------
-### Resume
-Didn't have time to see everything?  
-Here's a [PDF](https://www.dropbox.com/s/7j5pc38vmzoqoip/davidfan_public_resume.pdf?dl=0).
+### Resume/CV
+[[CV](https://www.dropbox.com/s/iiv1yxfeqlao42o/davidfan_cv_public.pdf?dl=0)]  
+[[Resume](https://www.dropbox.com/s/7j5pc38vmzoqoip/davidfan_public_resume.pdf?dl=0)]
