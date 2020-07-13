@@ -62,5 +62,5 @@ Senior Thesis in Computer Vision under supervision of [Prof. Jia Deng](http://ww
 
 ---------------------------
 ### Resume/CV
-[[CV](https://www.dropbox.com/s/iiv1yxfeqlao42o/davidfan_cv_public.pdf?dl=0)]  
+[[CV](https://davidfan.io/pdf/davidfan_cv.pdf)]  
 [[Resume](https://www.dropbox.com/s/7j5pc38vmzoqoip/davidfan_public_resume.pdf?dl=0)]
