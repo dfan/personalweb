@@ -7,9 +7,9 @@ description = "about"
 
 ---------------------------
 ### Short Bio
-I graduated *Magna Cum Laude* from Princeton University in 2019 with a B.S.E in computer science. I am passionate about advancing the state-of-art in computer vision and deep learning research, as well as reducing the computational and domain knowledge barriers that prevent large-scale production use of machine learning. I am happiest when doing a mix of hardcore research and engineering.
+I graduated *Magna Cum Laude* from Princeton University in 2019 with a B.S.E in computer science. I am passionate about advancing the state-of-art in computer vision and deep learning research, as well as reducing the computational and domain knowledge barriers that prevent large-scale production use of machine learning. I am happiest when doing a mix of research and engineering.
 
-My current research interests include, but are not limited to, 3D perception, meta learning, multi-task learning, representation learning, AutoML, and the intersection between vision + language.
+My current research interests include: 3D vision, semantic scene understanding, multi-modal learning, and learning with limited or no supervision. I see a future where computers are capable of human-like perception and visual reasoning.
 
 I am fluent in English and Mandarin Chinese. My hobbies include tennis, ping pong, clarinet, nature walks, hacking, and writing.
 
@@ -17,7 +17,7 @@ I am fluent in English and Mandarin Chinese. My hobbies include tennis, ping pon
 ### Education
 **Princeton University** | 2015-2019  
 B.S.E. in Computer Science and Minor in Statistics and Machine Learning | *Magna Cum Laude*  
-Senior Thesis in Computer Vision under supervision of [Prof. Jia Deng](http://www.cs.princeton.edu/~jiadeng/). Paper accepted to CVPR 2020.
+Senior Thesis in Computer Vision advised by [Prof. Jia Deng](http://www.cs.princeton.edu/~jiadeng/). Paper accepted to CVPR 2020.
 
 ---------------------------
 
