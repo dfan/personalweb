@@ -79,7 +79,8 @@ August 2019 - July 2020
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidfan.io/projects/</guid>
-      <description>OASIS: A Large-Scale Dataset for Single-Image 3D in the Wild Lack of high-quality, diverse, and large-scale data impedes research in many fields, including single-image 3D vision. For my senior thesis, I helped create OASIS, a large-scale dataset for single-image 3D in the wild. I implemented a pipeline for crowdsourcing dense pixel-wise 3D ground truths from sparse annotations, and trained state-of-art deep learning models to benchmark our dataset for multiple tasks.</description>
+      <description>OASIS: A Large-Scale Dataset for Single-Image 3D in the Wild Lack of high-quality, diverse, and large-scale data impedes research in many fields, including single-image 3D vision. For my senior thesis, I helped create OASIS, a large-scale dataset for single-image 3D in the wild. I implemented a pipeline for crowdsourcing dense pixel-wise 3D ground truths from sparse annotations, and quality control mechanisms to ensure annotation consistency.
+I also trained state-of-art deep learning models to benchmark OASIS for monocular surface normal estimation and planar semantic segmentation, and evaluate cross-dataset generalization.</description>
     </item>
     
     <item>

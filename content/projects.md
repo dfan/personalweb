@@ -7,11 +7,13 @@ description = "projects"
 
 {{% portfolio image="/images/portfolio/oasis.png" alt="CVPR 2020" %}}
 ### OASIS: A Large-Scale Dataset for Single-Image 3D in the Wild
-Lack of high-quality, diverse, and large-scale data impedes research in many fields, including single-image 3D vision. For my senior thesis, I helped create OASIS, a large-scale dataset for single-image 3D in the wild. I implemented a pipeline for crowdsourcing dense pixel-wise 3D ground truths from sparse annotations, and trained state-of-art deep learning models to benchmark our dataset for multiple tasks. The dataset improves performance in multiple visual tasks, and also introduces new tasks for research.
+Lack of high-quality, diverse, and large-scale data impedes research in many fields, including single-image 3D vision. For my senior thesis, I helped create OASIS, a large-scale dataset for single-image 3D in the wild. I implemented a pipeline for crowdsourcing dense pixel-wise 3D ground truths from sparse annotations, and quality control mechanisms to ensure annotation consistency.
+
+I also trained state-of-art deep learning models to benchmark OASIS for monocular surface normal estimation and planar semantic segmentation, and evaluate cross-dataset generalization. I provided the baseline for fold and occlusion boundary detection. The dataset improves performance in multiple visual tasks, and also introduces new tasks for research.
 
 This work was accepted to CVPR 2020 and advised by Professor Jia Deng.
 
-[[Paper]](https://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_OASIS_A_Large-Scale_Dataset_for_Single_Image_3D_in_the_CVPR_2020_paper.pdf), [[Supplementary Material]](https://openaccess.thecvf.com/content_CVPR_2020/supplemental/Chen_OASIS_A_Large-Scale_CVPR_2020_supplemental.pdf), [[Project page]](https://https//oasis.cs.princeton.edu/)
+[[Paper]](https://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_OASIS_A_Large-Scale_Dataset_for_Single_Image_3D_in_the_CVPR_2020_paper.pdf), [[Supplementary Material]](https://openaccess.thecvf.com/content_CVPR_2020/supplemental/Chen_OASIS_A_Large-Scale_CVPR_2020_supplemental.pdf), [[Project page]](https://oasis.cs.princeton.edu/)
 
 {{% /portfolio %}}
 
