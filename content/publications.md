@@ -9,7 +9,7 @@ description = "publications"
 {{% portfolio image="/images/portfolio/oasis.png" alt="CVPR 2020" %}}
 ### OASIS: A Large-Scale Dataset for Single-Image 3D in the Wild
 *CVPR* | 2020  
-[[Paper]](https://arxiv.org/abs/2007.13215), [[Supplementary Material]](https://openaccess.thecvf.com/content_CVPR_2020/supplemental/Chen_OASIS_A_Large-Scale_CVPR_2020_supplemental.pdf), [[Project page]](https://oasis.cs.princeton.edu/)
+[[Paper]](https://arxiv.org/abs/2007.13215), [[Supplementary Material]](https://openaccess.thecvf.com/content_CVPR_2020/supplemental/Chen_OASIS_A_Large-Scale_CVPR_2020_supplemental.pdf), [[Project page]](https://oasis.cs.princeton.edu/), [[Code]](http://github.com/princeton-vl/oasis)
 {{% /portfolio %}}
 
 {{% portfolio image="/images/portfolio/aging.png" url="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4600623/" alt="Aging" %}}

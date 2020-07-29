@@ -13,7 +13,7 @@ I also trained state-of-art deep learning models to benchmark OASIS for monocula
 
 This work was accepted to CVPR 2020 and advised by Professor Jia Deng.
 
-[[Paper]](https://arxiv.org/abs/2007.13215), [[Supplementary Material]](https://openaccess.thecvf.com/content_CVPR_2020/supplemental/Chen_OASIS_A_Large-Scale_CVPR_2020_supplemental.pdf), [[Project page]](https://oasis.cs.princeton.edu/)
+[[Paper]](https://arxiv.org/abs/2007.13215), [[Supplementary Material]](https://openaccess.thecvf.com/content_CVPR_2020/supplemental/Chen_OASIS_A_Large-Scale_CVPR_2020_supplemental.pdf), [[Project page]](https://oasis.cs.princeton.edu/), [[Code]](http://github.com/princeton-vl/oasis)
 
 {{% /portfolio %}}
 
