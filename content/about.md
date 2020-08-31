@@ -17,16 +17,17 @@ I am fluent in English and Mandarin Chinese. My hobbies include tennis, ping pon
 ### Education
 **Princeton University** | 2015-2019  
 B.S.E. in Computer Science and Minor in Statistics and Machine Learning | *Magna Cum Laude*  
-Senior Thesis in Computer Vision advised by [Prof. Jia Deng](http://www.cs.princeton.edu/~jiadeng/). Paper accepted to CVPR 2020.
+[Senior Thesis](https://dataspace.princeton.edu/jspui/handle/88435/dsp01cj82kb153) in Computer Vision advised by [Prof. Jia Deng](http://www.cs.princeton.edu/~jiadeng/). Paper accepted to CVPR 2020.
 
 ---------------------------
 
 ### Skills
-**Languages**: Java, Python, R, OCaml, C, Go, JavaScript  
-**Libraries/Frameworks**: PyTorch, Tensorflow, Shiny, ggplot2, Numpy, Pandas, Bootstrap, jQuery, d3, Express.js  
-**Web Development**: HTML, CSS, Javascript, React, Flask, MongoDB, MySQL  
-**Additional Tools**: Git, AWS, Jupyter, UNIX, LaTeX  
-**Keywords**: Computer Vision, Deep Learning, Software Engineering, Research, Data Visualization, Web Development
+**Programming Languages**: Python, Java, R, Javascript, Go, OCaml, MatLab, C/C++  
+**Libraries**: PyTorch, TorchScript, Tensorflow, OpenCV, Shiny  
+**Web Development**: Django, Express.js | HTML5, React, Hugo, Jekyll  
+**Databases**: MySQL, MongoDB, DynamoDB  
+**Other**: AWS, Docker, Git, UNIX, LaTeX, Leadership  
+**Keywords**: Computer Vision, Deep Learning, Research, Software Engineering, Data Visualization
 
 ---------------------------
 ### Coursework
