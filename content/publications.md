@@ -29,5 +29,5 @@ description = "publications"
 {{% portfolio image="/images/portfolio/biorxiv.png" url="https://www.biorxiv.org/content/early/2017/03/22/118992" alt="bioRxiv" %}}
 ### [UBiT2: a client-side web-application for gene expression data analysis](https://www.biorxiv.org/content/early/2017/03/22/118992)
 *bioRxiv* | 2017  
-[[Paper]](https://www.biorxiv.org/content/10.1101/118992v1)
+[[Paper]](https://www.biorxiv.org/content/10.1101/118992v1), [[Code]](https://github.com/JEFWorks/ubit2)
 {{% /portfolio %}}

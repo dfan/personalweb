@@ -51,9 +51,13 @@ From Fall 2016-Spring 2017, I was an organizer and coordinated bus routes, works
 {{% portfolio image="/images/portfolio/ubit2.png" url="http://ubit2.com/" alt="UBiT2" %}}
 ### [UBiT2 | Summer 2016](http://ubit2.com/)
 I worked with [Dr. Jean Fan](https://jef.works/) to develop an open-source web application for client-side RNA-seq and qPCR data analysis. All computation and data visualization is done client-side, thus providing a secure and fast environment for bioinformatics that involves no server. Built in HTML, CSS, and Javascript.
+
+[[Paper]](https://www.biorxiv.org/content/10.1101/118992v1), [[Code]](https://github.com/JEFWorks/ubit2)
 {{% /portfolio %}}
 
 {{% portfolio image="/images/portfolio/cwas.png" url="https://github.com/dfan/CWAS_Census" alt="CWAS" %}}
 ### [Claims-Wide Association Study | Summer 2016](https://github.com/dfan/CWAS_Census)
 I worked with [Prof. Isaac Kohane](http://dbmi.hms.harvard.edu/person/faculty/zak-kohane) and [Dr. Arjun Manrai](https://scholar.google.com/citations?user=uzzY6UAAAAAJ&hl=en) to develope a new association study called "claims-wide association study (CWAS)" - like genome-wide association studies (GWAS), but for insurance claims. I built a data visualization tool for plotting heatmaps of the USA from parsed AETNA insurance claims, at multiple levels of geographic specificity (zipcode, county, state, regional). Built in R, MySQL, and the Shiny web framework.
+
+[[Technical Report]](pdf/hst_summer2016_techreport.pdf)
 {{% /portfolio %}}
