@@ -68,9 +68,9 @@ LinkedIn: linkedin.com/in/davidfan97</description>
       <guid>https://davidfan.io/experience/</guid>
       <description>Industry Amazon | Research Engineer | Seattle, WA
 July 2020 - present
- Doing computer vision research with a current focus on video understanding for Prime Video.  Amazon Web Services (AI) | Software Engineer | Seattle, WA
+ Doing computer vision research with a current focus on video understanding for Prime Video. Submitted paper to CVPR 2021 about contrastive learning for long-form videos (i.e. movies).  Amazon Web Services (AI) | Software Engineer | Seattle, WA
 August 2019 - July 2020
- Elastic Inference reduces inference costs by enabling users to flexibly provision GPU compute. Added logging metrics and launched canaries to support new EC2 G4 instance family.</description>
+ Elastic Inference reduces inference costs by enabling users to flexibly provision GPU compute.</description>
     </item>
     
     <item>
