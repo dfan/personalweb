@@ -11,7 +11,7 @@ description = "experience"
 *July 2020 - present*
 
 - Doing computer vision research with a current focus on video understanding for [Prime Video](https://www.amazon.com/gp/video/offers).
-- Submitted paper to CVPR 2021 about contrastive learning for long-form videos (i.e. movies).
+- Paper accepted to CVPR 2021 about a novel pretext task for self-supervised representation learning on long-form videos (i.e. movies).
 
 [**Amazon Web Services (AI)**](https://aws.amazon.com) | Software Engineer | Seattle, WA  
 *August 2019 - July 2020*

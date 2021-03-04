@@ -44,7 +44,7 @@ A lot of work goes behind organizing a large hackathon like HackPrinceton, but n
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidfan.io/about/</guid>
-      <description>Short Bio I graduated Magna Cum Laude from Princeton University in 2019 with a B.S.E in computer science. I am passionate about advancing the state-of-art in computer vision and deep learning research, as well as reducing the computational and domain knowledge barriers that prevent large-scale production use of machine learning. I am happiest when doing a mix of research and engineering.
+      <description>Short Bio I graduated Magna Cum Laude from Princeton University in 2019 with a B.S.E in computer science. I am passionate about advancing the state-of-art in computer vision and deep learning research, as well as reducing the computational and domain knowledge barriers that prevent large-scale production use of machine learning. I am currently an Applied Scientist at Amazon, and was formerly a software engineer in AWS AI.
 My current research interests include: 3D vision, semantic scene understanding, multi-modal learning, and learning with limited or no supervision.</description>
     </item>
     
@@ -68,7 +68,7 @@ LinkedIn: linkedin.com/in/davidfan97</description>
       <guid>https://davidfan.io/experience/</guid>
       <description>Industry Amazon | Research Engineer | Seattle, WA
 July 2020 - present
- Doing computer vision research with a current focus on video understanding for Prime Video. Submitted paper to CVPR 2021 about contrastive learning for long-form videos (i.e. movies).  Amazon Web Services (AI) | Software Engineer | Seattle, WA
+ Doing computer vision research with a current focus on video understanding for Prime Video. Paper accepted to CVPR 2021 about a novel pretext task for self-supervised representation learning on long-form videos (i.e. movies).  Amazon Web Services (AI) | Software Engineer | Seattle, WA
 August 2019 - July 2020
  Elastic Inference reduces inference costs by enabling users to flexibly provision GPU compute.</description>
     </item>
@@ -79,8 +79,8 @@ August 2019 - July 2020
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidfan.io/projects/</guid>
-      <description>OASIS: A Large-Scale Dataset for Single-Image 3D in the Wild Lack of high-quality, diverse, and large-scale data impedes research in many fields, including single-image 3D vision. For my senior thesis, I helped create OASIS, a large-scale dataset for single-image 3D in the wild. I implemented a pipeline for crowdsourcing dense pixel-wise 3D ground truths from sparse annotations, and quality control mechanisms to ensure annotation consistency.
-I also trained state-of-art deep learning models to benchmark OASIS for monocular surface normal estimation and planar semantic segmentation, and evaluate cross-dataset generalization.</description>
+      <description>Shot Contrastive Semi-Supervised Learning for Scene Boundary Detection Scenes are critical to long-form video understanding as they delineate semantic progression. Localization of scenes is an important problem that is foundational to higher-level tasks in video understanding. Movies are particularly interesting as they are longer, more semantically complicated, and more visually challenging compared to most video datasets which contain clean short videos.
+We present a novel pretext task that exploits invariance in the shot-based scene structure of movies to learn a better representation via self-supervised contrastive learning.</description>
     </item>
     
     <item>
@@ -89,13 +89,13 @@ I also trained state-of-art deep learning models to benchmark OASIS for monocula
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidfan.io/publications/</guid>
-      <description>Peer-Reviewed  OASIS: A Large-Scale Dataset for Single-Image 3D in the Wild CVPR | 2020
+      <description>Peer-Reviewed  Shot Contrastive Semi-Supervised Learning for Scene Boundary Detection CVPR | 2021
+[Paper], [Project page], [Code]
+    OASIS: A Large-Scale Dataset for Single-Image 3D in the Wild CVPR | 2020
 [Paper], [Supplementary Material], [Project page], [Code]
     Heart-specific Rpd3 downregulation enhances cardiac function and longevity Aging | 2015
 [Paper]
-    Topological defects as relics of emergent continuous symmetry and Higgs condensation of disorder in ferroelectrics Nature Physics | 2014
-[Paper]
-   Preprint  UBiT2: a client-side web-application for gene expression data analysis bioRxiv | 2017</description>
+    Topological defects as relics of emergent continuous symmetry and Higgs condensation of disorder in ferroelectrics Nature Physics | 2014</description>
     </item>
     
   </channel>

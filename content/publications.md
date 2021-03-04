@@ -6,6 +6,12 @@ description = "publications"
 +++
 
 #### Peer-Reviewed
+{{% portfolio image="/images/portfolio/coming_soon.png" alt="CVPR 2021" %}}
+### Shot Contrastive Semi-Supervised Learning for Scene Boundary Detection
+*CVPR* | 2021  
+[Paper], [Project page], [Code]
+{{% /portfolio %}}
+
 {{% portfolio image="/images/portfolio/oasis.png" alt="CVPR 2020" %}}
 ### OASIS: A Large-Scale Dataset for Single-Image 3D in the Wild
 *CVPR* | 2020  
