@@ -33,6 +33,10 @@ params:
       weight: 1
       url: 'https://github.com/dfan/'
       icon: "fab fa-github fa-2x"
+    - name: Google Scholar
+      weight: 1
+      url: 'https://scholar.google.com/citations?user=VAiqiv4AAAAJ&hl'
+      icon: "fab fa-google fa-2x"
     - name: Medium
       weight: 2
       url: 'https://medium.com/@davidfan/'
