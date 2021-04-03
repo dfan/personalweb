@@ -6,7 +6,7 @@ description = "projects"
 +++
 
 {{% portfolio image="/images/portfolio/coming_soon.png" alt="CVPR 2021" %}}
-### Shot Contrastive Semi-Supervised Learning for Scene Boundary Detection
+### Shot Contrastive Self-Supervised Learning for Scene Boundary Detection
 Scenes are critical to long-form video understanding as they delineate semantic progression. Localization of scenes is an important problem that is foundational to higher-level tasks in video understanding. Movies are particularly interesting as they are longer, more semantically complicated, and more visually challenging compared to most video datasets which contain clean short videos.
 
 We present a novel pretext task that exploits invariance in the shot-based scene structure of movies to learn a better representation via self-supervised contrastive learning. Using this representation, we are able to beat previous state-of-art on MovieNet by 6 AP points while running 7x faster and using 9x fewer parameters. In addition, we present a new dataset for a downstream application called advertisement cuepoint insertion.
