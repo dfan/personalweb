@@ -6,11 +6,11 @@ description = "publications"
 +++
 
 #### Peer-Reviewed
-{{% portfolio image="/images/portfolio/coming_soon.png" alt="CVPR 2021" %}}
+{{% portfolio image="/images/portfolio/shotcol_cvpr2021.jpeg" alt="CVPR 2021" %}}
 ### Shot Contrastive Self-Supervised Learning for Scene Boundary Detection
 Shixing Chen, Xiaohan Nie*, **David Fan***, Dongqing Zhang, Vimal Bhat, [Raffay Hamid](http://www.raffayhamid.com/).  
 CVPR 2021.  
-[Paper], [Project page], [Code]
+[Paper](https://arxiv.org/abs/2104.13537), [Blog]
 {{% /portfolio %}}
 
 {{% portfolio image="/images/portfolio/oasis.png" alt="CVPR 2020" %}}
