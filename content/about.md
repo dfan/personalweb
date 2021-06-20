@@ -9,7 +9,7 @@ description = "about"
 ### Short Bio
 I graduated *Magna Cum Laude* from Princeton University in 2019 with a B.S.E in computer science. I am passionate about advancing the state-of-art in computer vision and deep learning research, as well as reducing the computational and domain knowledge barriers that prevent large-scale production use of machine learning. I am currently an Applied Scientist at Amazon, and was formerly a software engineer in AWS AI.
 
-My current research interests include: 3D vision, semantic scene understanding, multi-modal learning, and learning with limited or no supervision. I see a future where computers are capable of human-like perception and visual reasoning.
+My current research interests are in video understanding, with a particular emphasis on self-supervised video representation learning from multiple modalities. I see a future where computers are capable of human-like perception and visual reasoning.
 
 I am fluent in English and Mandarin Chinese. My hobbies include tennis, ping pong, clarinet, nature walks, hacking, and writing.
 

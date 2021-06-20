@@ -45,7 +45,7 @@ A lot of work goes behind organizing a large hackathon like HackPrinceton, but n
       
       <guid>https://davidfan.io/about/</guid>
       <description>Short Bio I graduated Magna Cum Laude from Princeton University in 2019 with a B.S.E in computer science. I am passionate about advancing the state-of-art in computer vision and deep learning research, as well as reducing the computational and domain knowledge barriers that prevent large-scale production use of machine learning. I am currently an Applied Scientist at Amazon, and was formerly a software engineer in AWS AI.
-My current research interests include: 3D vision, semantic scene understanding, multi-modal learning, and learning with limited or no supervision.</description>
+My current research interests are in video understanding, with a particular emphasis on self-supervised video representation learning from multiple modalities.</description>
     </item>
     
     <item>
@@ -66,10 +66,11 @@ LinkedIn: linkedin.com/in/davidfan97</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidfan.io/experience/</guid>
-      <description>Industry Amazon | Research Engineer | Seattle, WA
-July 2020 - present
- Doing computer vision research with a current focus on video understanding for Prime Video. Paper accepted to CVPR 2021 about a novel pretext task for self-supervised representation learning on long-form videos (i.e. movies).  Amazon Web Services (AI) | Software Engineer | Seattle, WA
-August 2019 - July 2020
+      <description>Industry Amazon | Seattle, WA
+Applied Scientist, May 2021 - present
+Research Engineer, July 2020 - May 2021
+ Doing computer vision research with a current focus on video understanding for Prime Video. Paper accepted to CVPR 2021 about a novel pretext task for self-supervised representation learning on long-form videos (i.e. movies).  Amazon Web Services (AI) | Seattle, WA
+Software Engineer, August 2019 - July 2020
  Elastic Inference reduces inference costs by enabling users to flexibly provision GPU compute.</description>
     </item>
     
