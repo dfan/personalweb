@@ -63,5 +63,4 @@ B.S.E. in Computer Science and Minor in Statistics and Machine Learning | *Magna
 
 ---------------------------
 ### Resume/CV
-[[CV](pdf/davidfan_cv.pdf)]  
-[[Resume](https://www.dropbox.com/s/7j5pc38vmzoqoip/davidfan_public_resume.pdf?dl=0)]
+[[My CV](pdf/davidfan_cv.pdf)]  
