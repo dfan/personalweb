@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="David Fan">
+    <meta name="description" content="https://davidfan.io">
+    <meta name="keywords" content="David,Fan,Princeton,University,Amazon,Harvard-MIT HST,HackPrinceton,Science Olympiad,Computer Vision,Deep Learning,Machine Learning,Software Engineering, Bioinformatics,Research">
+    
+    <meta property="og:site_name" content="David Fan">
+    <meta property="og:title" content="
+  Paper Summary for ShotCoL: Self-Supervised Video Representation Learning for Scene Boundary Detection in Movies and TV Episodes - David Fan
+">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://davidfan.io/blog/2021/06/paper-summary-for-shotcol-self-supervised-video-representation-learning-for-scene-boundary-detection-in-movies-and-tv-episodes/">
+    <meta property="og:image" content="https://davidfan.io">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://davidfan.io/blog/2021/06/paper-summary-for-shotcol-self-supervised-video-representation-learning-for-scene-boundary-detection-in-movies-and-tv-episodes/">
+    <meta name="twitter:image" content="https://davidfan.io">
+
+    <base href="https://davidfan.io">
+    <title>
+  Paper Summary for ShotCoL: Self-Supervised Video Representation Learning for Scene Boundary Detection in Movies and TV Episodes - David Fan
+</title>
+
+    <link rel="canonical" href="https://davidfan.io/blog/2021/06/paper-summary-for-shotcol-self-supervised-video-representation-learning-for-scene-boundary-detection-in-movies-and-tv-episodes/">
+    
+    <link rel="stylesheet" href="css/column.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMuli:400,7007C&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-opensource-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-opensource-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.52" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">David Fan</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://davidfan.io/about">About</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://davidfan.io/experience">Experience</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://davidfan.io/projects">Projects</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://davidfan.io/publications">Publications</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://davidfan.io/blog">Blog</a>
+            </li>
+          
+        
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Paper Summary for ShotCoL: Self-Supervised Video Representation Learning for Scene Boundary Detection in Movies and TV Episodes</h1>
+      <h2 class="date">June 20, 2021</h2>
+
+      
+        <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full">
+          MathJax.Hub.Config({
+            tex2jax: {
+              inlineMath: [['$','$']],
+              displayMath: [['$$','$$']],
+              processEscapes: true,
+              processEnvironments: true,
+              skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+              TeX: { extensions: ["AMSmath.js", "AMSsymbols.js"] }
+            }
+          });
+          MathJax.Hub.Queue(function() {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+          });
+          </script>
+      
+    </header>
+
+    
+
+<p><em>15 minute read.</em><br />
+<em>Disclaimer: this paper summary exclusively represents my own views and DOES NOT represent the views of my employer nor my institution. This post should not in any way be treated as an official reference.</em></p>
+
+<p>Roughly a year ago, I started doing research in self-supervised video representation learning with a focus on understanding long-form content. That work culminated in a second-author <a href="https://arxiv.org/abs/2104.13537">CVPR 2021 paper</a>, which is the focus of this post. This post is a purely informal paper summary that I challenged myself to write in order to improve my writing and communication skills. I will start by motivating the problem, and then explain the intuition behind our method and how it differs from both previous image and video-based self-supervised learning approaches. Finally, I will conclude by summarizing the key results in layman terms.</p>
+
+<h2 id="motivation">Motivation</h2>
+
+<p>Labeling data at scale is expensive and time-consuming. In general, the amount of unlabeled data in the world far exceeds the amount of labeled data and new data is created everyday. To give a concrete example, suppose that you were asked to label all movies in existence for the task of recognizing actions. This would likely take dozens of years even if you divided this work among many friends and continuously labeled movies without sleeping nor eating. This is just for one task, so what if you wanted to then obtain labels for another task?</p>
+
+<p>This is a big obstacle for supervised machine learning, as current state-of-the-art models require large amounts of labeled data in order to perform well, yet many machine learning tasks do not have sufficient labeled data. In contrast, self-supervised learning seeks to leverage invariances inherently present in unlabeled data, and learn a representation that can be used for a wide range of downstream tasks. This makes self-supervised learning especially promising in a limited-label setting where large amounts of unlabeled data would otherwise go unused.</p>
+
+<p>My CVPR 2021 paper presents <strong>ShotCoL,</strong> which is a new state-of-the-art contrastive learning algorithm for scene boundary detection. Using shots from movies, ShotCoL teaches a model to represent visual and audio inputs by pulling together a given sample and its nearest neighbor in the embedding space, and pushing apart randomly selected shots from further away. ShotCoL is different from and substantially more effective than other works which teach a model to be invariant between two augmented versions of the same image, such as MoCo <em>[1]</em> and SimCLR <em>[2]</em>.</p>
+
+<p>Next, I will define the problem of scene boundary detection.</p>
+
+<p><img src="images/blog/cvpr2021/ShotCoL_Diagram.png" alt="" /><br />
+<em>An overview of the ShotCoL method. The model learns to pull together a given shot and its nearest neighboring shot in the embedding space, and push apart randomly selected shots. Any model can be plugged into the ShotCoL framework and any modality can be used (e.g. visual, audio, text).</em></p>
+
+<h2 id="scene-boundary-detection-a-fundamental-capability-for-understanding-movies-and-tv-episodes">Scene Boundary Detection - A Fundamental Capability for Understanding Movies and TV Episodes</h2>
+
+<p>In video production, a <strong>“shot”</strong> is defined as a series of frames captured from the same camera over an uninterrupted period of time, while a <strong>“scene”</strong> is defined as a series of shots depicting a semantically cohesive part of a story. Although shot localization can be accurately achieved with low-level visual cues, scene localization is difficult and requires higher-level semantic understanding of the video. Thus, scene boundary detection is an important step towards building semantic understanding of movies and TV episodes, with numerous industrial applications. Scene boundary detection can be formulated as a binary classification problem of predicting whether a given shot boundary is also a scene boundary.</p>
+
+<p><img src="images/blog/cvpr2021/shot_scene.png" alt="" /><br />
+<em>Two scenes from Stuart Little are depicted here. A scene is composed of multiple shots. Determining where a scene begins and ends requires high-level understanding of the video.</em></p>
+
+<p>Next, I will explain our approach at a high-level and give intuition for why it is effective for video representation learning.</p>
+
+<h2 id="self-supervised-learning">Self-Supervised Learning</h2>
+
+<p>Self-supervised learning is a subset of learning methods that does not use human-annotated labels, and typically involves solving a pretext or surrogate task. The purpose of the pretext task is to allow the model to learn representations of unlabeled data using pseudo-labels generated automatically from the data itself. The resultant learned representation can be used for many different downstream tasks.</p>
+
+<p>Our work draws inspiration from self-supervised contrastive learning - a subset of self-supervised learning methods that defines the pretext task as pulling positive pairs together while pushing apart negative pairs. There are many plausible ways of defining a positive pair for this pretext task, so let’s consider a few and then present our own novel pretext task.</p>
+
+<h3 id="shot-based-invariance-for-representation-learning">Shot-Based Invariance for Representation Learning</h3>
+
+<p>Previous works in contrastive learning such as MoCo <em>[1]</em> and SimCLR <em>[2]</em> focus on image classification, and learn a representation in a self-supervised manner by defining positive pairs using augmented versions of the same image. The idea is that augmented versions of the same image should be similar in the embedding space, so the model should be able to maximize similarity between an image and its augmented version, while minimizing similarity with other randomly selected images.</p>
+
+<p>In contrast, the core intuition behind ShotCoL is that nearby shots are more likely to be similar to each other than shots randomly selected from further away. This intuition holds in practice due to the coherent storyline that is communicated by shots within a scene - nearby shots tend to have the same set of actors enacting a semantically cohesive story, and are therefore in expectation more similar to each other than a set of randomly selected shots.</p>
+
+<p>Thus, for a given query shot, ShotCoL defines <strong>its positive key as the closest neighboring shot</strong> within the embedding space, and all other non-neighboring shots as negatives. By leveraging this invariance, our pretext task is able to implicitly capture the shot-based structure of movies which defines semantic progression. Note that naive approaches (such as selecting a shot that is a fixed number of steps before or after the query shot) do not always capture a relevant relationship to the query shot. Different possible ways of selecting a positive pair are depicted below.</p>
+
+<p><img src="images/blog/cvpr2021/augmentation.jpg" alt="" /></p>
+
+<p><em>Different methods of defining a positive key to a query shot are shown. The center three approaches do not adequately capture temporal relations within the movie. In contrast to augmentation based works, ShotCoL explicitly encodes the temporal structure of videos into our pretext task for representation learning. For a given shot, its positive key is defined as the closest shot in the embedding space within a local neighborhood.</em></p>
+
+<p>By using shots as the basic unit instead of individual frames, ShotCoL is also able to efficiently condense movies into a compact space and reduce redundancy, thus providing one answer to the open research question of how to efficiently represent videos for deep learning.</p>
+
+<p>Next, I will present key results on the MovieNet dataset <em>[3]</em>, which is a publicly available dataset with rich annotations for $1,100$ movies, $318$ of which have scene annotations.</p>
+
+<h2 id="key-results">Key Results</h2>
+
+<h3 id="effectiveness-of-our-representation-for-shot-retrieval">Effectiveness of our Representation for Shot Retrieval</h3>
+
+<p>Intuitively, a good representation for scene boundary detection should be able to project shots from within the same scene to be close to each other in the embedding space. To evaluate this, we projected all shots from the MovieNet test set into features, and then for each shot’s feature, computed its five closest neighbors via cosine similarity on the projected features. The below figure shows qualitatively what the five nearest neighbor shots look like when you use three different feature spaces.</p>
+
+<p><img src="images/blog/cvpr2021/qualitiative_representation_quality.png" alt="" />
+<em>Green text denotes that the retrieved shot belongs to the same scene as the query shot and red text denotes otherwise.</em></p>
+
+<p>In this example, all five closest shots retrieved by ShotCoL belong to the same scene. However, when using features precomputed from popular pre-trained models such as those trained on ImageNet <em>[4]</em>, this is not the case. This highlights the effectiveness of our representation at clustering shots from within the same scene to be close together in the embedding space.</p>
+
+<h3 id="effectiveness-of-shotcol-s-pretext-task">Effectiveness of ShotCoL’s Pretext Task</h3>
+
+<p>Next, let’s distill the effectiveness of our nearest-neighboring shot based pretext task using results from the MovieNet test set. Let&rsquo;s first compare against pre-trained feature spaces and previous state-of-the-art, and then look at self-supervised approaches.</p>
+
+<p><strong>Compared to Supervised Approaches:</strong><br />
+Let us first consider popular pre-trained feature spaces such as ImageNet and Places as a baseline. When pre-trained ImageNet and Places features are directly used for scene boundary detection, the Average Precision (AP) is $41.26$ and $43.23$ respectively. Compared to ImageNet, ShotCoL improves the AP by over $12$ points absolute ($29.3\%$ relative).</p>
+
+<p>Next, let’s compare to LGSS <em>[5]</em> which was the previous state-of-the-art method for scene boundary detection. Compared to LGSS, ShotCoL improves the AP by over $6$ points absolute ($13.3\%$ relative), showing that ShotCoL can learn a more effective representation for scene boundary detection than previous supervised approaches. This further supports the argument that self-supervised learning has high potential for closing the gap between fully-supervised approaches, or even surpassing supervised approaches in the long-run.</p>
+
+<p><img src="images/blog/cvpr2021/supervised_movienet_comparison_new.png" alt="" /><br />
+<em>ShotCoL achieves new state-of-the-art AP ($+13.3\%$ relative) while using 9x fewer parameters and running $7x$ faster, and only using a single modality compared to four.</em></p>
+
+<p><strong>Compared to Self-Supervised Approaches:</strong><br />
+There are two questions to consider when comparing against self-supervised approaches. First, how does our nearest-neighbor based pretext task compare to the image augmentation based pretext task popularized by MoCo and SimCLR? Second, is our method agnostic to the choice of learning framework?</p>
+
+<p>After training ResNet50 using the image augmentation based pretext task in MoCo and SimCLR on unlabeled shots from MovieNet, we obtained an AP of $42.51$ and $41.65$ respectively, which is nearly identical to the results obtained from ImageNet pre-trained features. This indicates that the image augmentation based pretext task fails to capture any meaningful information from videos, which (unlike images) carry a temporal aspect.</p>
+
+<p>After swapping the image augmentation based pretext task with ShotCoL’s shot similarity based pretext task, the AP improves from $41.65$ to $50.45$ ($+21.1\%$ relative) for SimCLR, and $42.51$ to $53.37$ ($+25.5\%$ relative) for MoCo. This demonstrates that our pretext task is especially effective for learning a useful representation for movie understanding, and is agnostic to the specific learning framework used.</p>
+
+<p><img src="images/blog/cvpr2021/selfsupervised_movienet_comparison_new.png" alt="" /><br />
+<em>Our pretext task consistently improves performance regardless of the self-supervised learning framework it is inserted in. For both SimCLR and MoCo, there is a clear improvement over the image augmentation based pretext task.</em></p>
+
+<h3 id="label-efficiency">Label Efficiency</h3>
+
+<p>When training a classifier on the embedding learned from ShotCoL for the downstream task of scene boundary detection, we can achieve equivalent performance to previous state-of-the-art by using only $~25\%$ of the training set labels in MovieNet. Furthermore, we can achieve equivalent performance to popular pre-trained embeddings such as ImageNet by using only $~10\%$ of the training labels. By learning a rich representation from unlabeled data, fewer labels are required to train a classifier for the downstream task compared to a fully-supervised approach, further illustrating the efficacy of self-supervised learning at making use of unlabeled data.</p>
+
+<p><img src="images/blog/cvpr2021/movienet_labelefficiency.png" alt="" /><br />
+<em>Compared to previous state-of-the-art [5] on MovieNet, only $~25\%$ of training labels are required to achieve equivalent performance using ShotCoL. Additionally, ShotCoL can achieve equivalent performance as ImageNet pre-trained features using just only $~10\%$ of the labels. This illustrates that self-supervised learning can lead to greater label efficiency in downstream tasks.</em></p>
+
+<h3 id="cross-dataset-generalization">Cross-Dataset Generalization</h3>
+
+<p>Cross-dataset generalization remains an open problem in computer vision; a model trained for one task or dataset may not perform well in a different setting. In contrast, self-supervised approaches are promising for learning embeddings that generalize well across unseen data, and this has already been observed in the literature. For example, in the original MoCo paper, MoCo embeddings outperform their supervised pre-training counterparts in several different object segmentation and detection benchmarks, despite only being trained on unlabeled ImageNet data.</p>
+
+<p>To evaluate cross-dataset generalization, we freeze the weights of ShotCoL to extract features, and then train a simple classifier on top of these extracted features. We then consider performance on AdCuepoints, which is a dataset for a <strong>different task</strong> of advertisement cue-point insertion. If ShotCoL has learned a generalized representation, then it should perform well on both advertisement cue-point insertion and scene boundary detection regardless of what unlabeled data the model was first trained on.</p>
+
+<p>When ShotCoL is pre-trained on unlabeled MovieNet, it is able to achieve nearly equivalent performance on the AdCuepoints test set, as when ShotCoL was pre-trained on unlabeled AdCuepoints. The same also holds true when ShotCoL is pre-trained on unlabeled AdCuepoints and evaluated on the MovieNet test set. This indicates that self-supervised learning has good potential for learning generalizable features, even when the model is only trained on a single pretext task that is not directly related to the downstream tasks.</p>
+
+<p>I personally believe that further developments in self-supervised learning will reduce the amount of effort required to develop models in the future, since one will no longer need to train a highly specialized model for every single task in order to achieve state-of-the-art performance. In recent literature, other researchers have also observed similar properties for other self-supervised models.</p>
+
+<p><img src="images/blog/cvpr2021/ShotCoL_TransferLearning.png" alt="" /></p>
+
+<h3 id="multimodal-learning-and-temporal-modeling">Multimodal Learning and Temporal Modeling</h3>
+
+<p>ShotCoL allows for independent usage of additional modalities such as raw audio. When ShotCoL is trained on raw audio from the AdCuepoints dataset, we obtain a relative improvement in AP of $12.7\%$ compared to pre-trained AudioSet features from the PANN network <em>[6]</em>. This shows that our method is agnostic to the choice of input modality, further illustrating the potential of ShotCoL’s novel pretext task. The results also suggest that we could have further improved the performance on MovieNet if we had access to its raw audio.</p>
+
+<p><img src="images/blog/cvpr2021/Adcuepoints_SingleModal_Results.png" alt="" /></p>
+
+<p>Combining the visual and audio features learned by ShotCoL yields the highest results on AdCuepoints, indicating the importance of leveraging all available modalities for video understanding. The combined audio and visual features lead to a higher AP of $57.65$ compared to $53.98$ for the visual modality, when a MLP is used as the classifier. We also experimented with using a bidirectional LSTM and Transformer to do temporal modeling on the extracted features, leading to a higher AP of $59.02$ and $59.95$ respectively on AdCuepoints. Transformers are naturally equipped to model sequential data (unlike CNNs) and video data is naturally sequential. Recent advances such as sparse self-attention <em>[7]</em> make Transformers more computationally feasible than ever, and I anticipate further adoption of architectures from natural language processing to computer vision in the future.</p>
+
+<p><img src="images/blog/cvpr2021/AdCuepoints_Multimodal_Results.png" alt="" /></p>
+
+<h2 id="what-s-next">What’s Next?</h2>
+
+<p>ShotCoL is an important step towards understanding temporal progression and semantic content within movies and TV episodes, however scene boundary detection is just one problem out of many. I hope that the insights provided by our work will lead to further advances in long-form video representation learning, and benefit other tasks which require higher level understanding of the content, such as action localization, movie question answering, and search and retrieval.</p>
+
+<p>I feel very privileged to have had the opportunity to do this work, and I aspire to continue pushing the envelope of research in multi-modal video understanding. For more details on this particular work, please see our <a href="https://arxiv.org/abs/2104.13537">CVPR 2021 paper</a>. Stay tuned for my next post where I will talk about my journey of moving into industry research!</p>
+
+<p><strong>Blog Post References</strong></p>
+
+<ol>
+<li><p>Kaiming He, Haoqi Fan, Yuxin Wu, Saining Xie, and Ross Girshick. Momentum contrast for unsupervised visual representation learning. In <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition</em>, 2020.</p></li>
+
+<li><p>Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. A simple framework for contrastive learning of visual representations. In <em>Proceedings of the 37th International Conference on Machine Learning</em>, 2020.</p></li>
+
+<li><p>Qingqiu Huang, Yu Xiong, Anyi Rao, Jiaze Wang, and Dahua Lin. Movienet: A holistic dataset for movie un- derstanding. In <em>European Conference on Computer Vision</em>, 2020.</p></li>
+
+<li><p>Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, and Li Fei-Fei. Imagenet: A large-scale hierarchical image database. In <em>Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition</em>, 2009.</p></li>
+
+<li><p>Anyi Rao, Linning Xu, Yu Xiong, Guodong Xu, Qingqiu Huang, Bolei Zhou, and Dahua Lin. A local-to-global approach to multi-modal movie scene segmentation. In <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition</em>, 2020.</p></li>
+
+<li><p>Qiuqiang Kong, Yin Cao, Turab Iqbal, Yuxuan Wang, Wenwu Wang, and Mark D. Plumbley. Panns: Large-scale pretrained audio neural networks for audio pattern recognition. <em>arXiv preprint arXiv:1912.10211,</em> 2020.</p></li>
+
+<li><p>Sinong Wang, Belinda Li, Madian Khabsa, Han Fang, and Hao Ma. Linformer: Self-attention with linear complexity. <em>arXiv preprint arXiv:2006.04768</em>, 2020.</p></li>
+</ol>
+
+  </article>
+
+  <br/>
+
+  
+  
+</section>
+
+      </div>
+      
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-67735838-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  <script src="/js/app.js"></script>
+  
+  </body>
+</html>

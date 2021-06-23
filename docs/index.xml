@@ -5,10 +5,21 @@
     <link>https://davidfan.io/</link>
     <description>Recent content on David Fan</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jun 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://davidfan.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Paper Summary for ShotCoL: Self-Supervised Video Representation Learning for Scene Boundary Detection in Movies and TV Episodes</title>
+      <link>https://davidfan.io/blog/2021/06/paper-summary-for-shotcol-self-supervised-video-representation-learning-for-scene-boundary-detection-in-movies-and-tv-episodes/</link>
+      <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidfan.io/blog/2021/06/paper-summary-for-shotcol-self-supervised-video-representation-learning-for-scene-boundary-detection-in-movies-and-tv-episodes/</guid>
+      <description>15 minute read.
+Disclaimer: this paper summary exclusively represents my own views and DOES NOT represent the views of my employer nor my institution. This post should not in any way be treated as an official reference.
+Roughly a year ago, I started doing research in self-supervised video representation learning with a focus on understanding long-form content. That work culminated in a second-author CVPR 2021 paper, which is the focus of this post.</description>
+    </item>
     
     <item>
       <title>Reflections on 2010–2019</title>
