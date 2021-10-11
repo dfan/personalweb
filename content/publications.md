@@ -10,7 +10,7 @@ description = "publications"
 ### Shot Contrastive Self-Supervised Learning for Scene Boundary Detection
 Shixing Chen, Xiaohan Nie*, **David Fan***, Dongqing Zhang, Vimal Bhat, [Raffay Hamid](http://www.raffayhamid.com/).  
 CVPR 2021.  
-[Paper](https://arxiv.org/abs/2104.13537), [Blog]
+[Paper](https://arxiv.org/abs/2104.13537), [Amazon Blog](https://www.amazon.science/blog/automatically-identifying-scene-boundaries-in-movies-and-tv-shows), [Personal Blog](https://davidfan.io/blog/2021/06/paper-summary-for-shotcol-self-supervised-video-representation-learning-for-scene-boundary-detection-in-movies-and-tv-episodes/)
 {{% /portfolio %}}
 
 {{% portfolio image="/images/portfolio/oasis.png" alt="CVPR 2020" %}}
