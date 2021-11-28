@@ -27,17 +27,16 @@ description = "experience"
 [**Amazon Web Services (Databases)**](https://aws.amazon.com) | *East Palo Alto, CA*  
 **Software Engineering Intern**, June - August 2018
 
-- Worked on [Aurora](https://aws.amazon.com/rds/aurora/), a distributed cloud-native relational database, and AWS' fastest growing service.
-- Developed production cluster service to automate ticket resolution using Java, DynamoDB, and internal service APIs. Improved on-call engineer productivity.
-- Wrote tool for enabling/disabling autoscaling policies and provisioning IOPS on pre-prod clusters.
+- Developed automated devops tool for [AWS Aurora](https://aws.amazon.com/rds/aurora/), a distributed cloud-native relational database, which improved on-call engineer productivity by automatically applying fixes to low-severity tickets and reducing manual processes.
+- Wrote a tool for enabling/disabling autoscaling policies and provisioning IOPS on DynamoDB clusters to improve cost management.
+
 
 [**Phosphorus**](https://phosphorus.com) | *New York, NY*  
 **Software Engineering Intern**, May - August 2017
 
 - One of 30 Princeton Start-up Immersion Program participants placed at early-stage or series A startups.
-- Redesigned management portal and implemented custom UI/UX components in admin dashboard using Wicket and Scala.
-- Created distributor preference scoping model in Scala, Spring Boot, Hibernate, and PostgreSQL. Wrote AWS Cloud Formation
-templates.
+- Redesigned and implemented custom UI/UX components for user dashboard using Wicket and Scala.
+- Designed modeling layer in Scala, Spring Boot, Hibernate, and PostgreSQL. Wrote AWS CloudFormation templates for automated infrastructure deployment.
 
 ---------------------------
 ### Academic/Research
@@ -59,7 +58,7 @@ templates.
     - Worked with [Dr. Jean Fan](https://jef.works/) to develop an open-source web application for client-side RNA-seq and qPCR data analysis.
     - All computation and data visualization is done client-side, thus providing a secure and fast environment for bioinformatics that involves no server.
     - Built in HTML, CSS, and Javascript. Code [here](http://ubit2.com/).
-    - Submitted manuscript to [bioRxiv](https://www.biorxiv.org/content/early/2017/03/22/118992).
+    - Technical report posted on [bioRxiv](https://www.biorxiv.org/content/early/2017/03/22/118992).
 
 [**Rutgers New Jersey Medical School**](http://njms.rutgers.edu/) | *Newark, NJ*  
 **HS Research Intern**, June - August 2014
