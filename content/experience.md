@@ -12,7 +12,7 @@ description = "experience"
 **Research Engineer**, July 2020 - May 2021
 
 - Developed self-supervised method for scene boundary detection that **improves state-of-the-art by 13%** even compared to fully-supervised methods, while **reducing data labeling requirements by 75%** and improving inference time by 84%.
-    - Paper accepted to CVPR 2021. Authored [blog post](https://www.amazon.science/blog/automatically-identifying-scene-boundaries-in-movies-and-tv-shows) on Amazon Research website.
+    - Second-author paper accepted to CVPR 2021. Authored [blog post](https://www.amazon.science/blog/automatically-identifying-scene-boundaries-in-movies-and-tv-shows) on Amazon Research website.
 - Developed novel self-supervised video representation learning method that improves state-of-the-art in video action recognition. Mentored research intern to full-time offer. Paper is under review.
 - Explored audiovisual contrastive learning and vision transformers for video action recognition and applications in cinematic content understanding.
 
