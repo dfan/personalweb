@@ -11,7 +11,7 @@ Scenes are critical to long-form video understanding as they delineate semantic 
 
 We present a novel pretext task that encourages the model to project embeddings from nearest neighboring shots to be closer in the embedding space than randomly sampled negative shots. Our pretext task exploits invariance in the shot-based scene structure of movies to learn a better representation via self-supervised contrastive learning. Using this representation, we are able to beat previous state-of-art on MovieNet by 6 AP points while running 7x faster and using 9x fewer parameters. In addition, we present a new dataset for a downstream application called advertisement cuepoint insertion.
 
-[Paper](https://arxiv.org/abs/2104.13537), [Blog]
+[Paper](https://arxiv.org/abs/2104.13537), [Amazon Blog](https://www.amazon.science/blog/automatically-identifying-scene-boundaries-in-movies-and-tv-shows), [Personal Blog](https://davidfan.io/blog/2021/06/paper-summary-for-shotcol-self-supervised-video-representation-learning-for-scene-boundary-detection-in-movies-and-tv-episodes/)
 {{% /portfolio %}}
 
 {{% portfolio image="/images/portfolio/oasis.png" alt="CVPR 2020" %}}
