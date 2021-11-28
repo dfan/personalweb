@@ -16,8 +16,13 @@ I am fluent in English and Mandarin Chinese. My hobbies include tennis, ping pon
 ---------------------------
 ### Education
 **Princeton University** | 2015-2019  
-B.S.E. in Computer Science and Minor in Statistics and Machine Learning | *Magna Cum Laude*  
-[Senior Thesis](https://dataspace.princeton.edu/jspui/handle/88435/dsp01cj82kb153) in Computer Vision advised by [Prof. Jia Deng](http://www.cs.princeton.edu/~jiadeng/). Paper accepted to CVPR 2020.
+B.S.E. in Computer Science and Minor in Statistics and Machine Learning | *Magna Cum Laude* (High Honors)  
+[Senior Thesis](https://dataspace.princeton.edu/jspui/handle/88435/dsp01cj82kb153) in Computer Vision advised by [Prof. Jia Deng](http://www.cs.princeton.edu/~jiadeng/). [Paper](https://arxiv.org/abs/2007.13215) accepted to the 2020 IEEE Conference in Computer Vision.
+
+---------------------------
+
+### Resume/CV
+[[My CV](pdf/davidfan_cv.pdf)]  
 
 ---------------------------
 
@@ -60,7 +65,3 @@ B.S.E. in Computer Science and Minor in Statistics and Machine Learning | *Magna
 - [QCB 455: Introduction to Genomics and Computational Molecular Biology (Fall 2017)](https://registrar.princeton.edu/course-offerings/course_details.xml?courseid=010185&term=1182)  
 - [COS 326: Functional Programming (Fall 2017)](https://www.cs.princeton.edu/courses/archive/fall17/cos326/)  
 - [COS 432: Information Security (Fall 2017)](https://www.cs.princeton.edu/courses/archive/fall17/cos432/)  
-
----------------------------
-### Resume/CV
-[[My CV](pdf/davidfan_cv.pdf)]  
