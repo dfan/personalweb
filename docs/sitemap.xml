@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://davidfan.io/blog/2022/02/breaking-into-industry-ml-ai-research-without-a-phd/</loc>
+    <lastmod>2022-02-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://davidfan.io/blog/2021/06/paper-summary-for-shotcol-self-supervised-video-representation-learning-for-scene-boundary-detection-in-movies-and-tv-episodes/</loc>
     <lastmod>2021-06-20T00:00:00+00:00</lastmod>
   </url>
@@ -28,7 +33,7 @@
   
   <url>
     <loc>https://davidfan.io/blog/</loc>
-    <lastmod>2021-06-20T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -43,7 +48,7 @@
   
   <url>
     <loc>https://davidfan.io/</loc>
-    <lastmod>2021-06-20T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

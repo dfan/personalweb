@@ -5,10 +5,19 @@
     <link>https://davidfan.io/blog/</link>
     <description>Recent content in Blogs on David Fan</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 20 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Feb 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://davidfan.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Breaking into Industry ML/AI Research Without a PhD</title>
+      <link>https://davidfan.io/blog/2022/02/breaking-into-industry-ml-ai-research-without-a-phd/</link>
+      <pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidfan.io/blog/2022/02/breaking-into-industry-ml-ai-research-without-a-phd/</guid>
+      <description>I am currently an Applied Scientist who is doing full-time machine learning (ML) research at Amazon without a PhD. I get to work on intellectually difficult problems with strong potential for greenfield innovation, work with really bright and motivated people, and earn high industry pay¹ while doing what I love. Unfortunately, while a lot of people are interested in entering machine learning, there isn’t a lot of guidance online for those trying to transition into ML from software engineering.</description>
+    </item>
     
     <item>
       <title>Paper Summary for ShotCoL: Self-Supervised Video Representation Learning for Scene Boundary Detection in Movies and TV Episodes</title>
