@@ -6,6 +6,13 @@ description = "publications"
 +++
 
 #### Peer-Reviewed
+{{% portfolio image="/images/portfolio/video_nnclr.jpg" alt="ICLR 2023 Workshop on Mathematical and Empirical Understanding of Foundation Models" %}}
+### Nearest-Neighbor Inter-Intra Contrastive Learning from Unlabeled Videos
+**David Fan***, Deyu Yang, [Xinyu Li](https://arthurlxy.github.io/), Vimal Bhat, Rohith MV.  
+ICLR 2023 Workshop on Mathematical and Empirical Understanding of Foundation Models.  
+[Paper](https://arxiv.org/abs/2303.07317), [Blog Post Coming Up]
+{{% /portfolio %}}
+
 {{% portfolio image="/images/portfolio/shotcol_cvpr2021.jpeg" alt="CVPR 2021" %}}
 ### Shot Contrastive Self-Supervised Learning for Scene Boundary Detection
 Shixing Chen, Xiaohan Nie*, **David Fan***, Dongqing Zhang, Vimal Bhat, [Raffay Hamid](http://www.raffayhamid.com/).  
