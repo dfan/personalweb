@@ -7,11 +7,14 @@ description = "about"
 
 ---------------------------
 ### Short Bio
-I graduated *Magna Cum Laude* from Princeton University in 2019 with a B.S.E in computer science. I am passionate about advancing the state-of-art in computer vision and deep learning research, as well as reducing the computational and domain knowledge barriers that prevent large-scale production use of machine learning. I am currently an Applied Scientist at Amazon, and was formerly a software engineer in AWS AI.
-
-My current research interests are in video understanding, with a particular emphasis on self-supervised video representation learning from multiple modalities. I see a future where computers are capable of human-like perception and visual reasoning.
+I graduated *Magna Cum Laude* from Princeton University in 2019 with a B.S.E in computer science. I am currently an Applied Scientist at Amazon Prime Video where I do research in video understanding and multimodal representation learning, with an emphasis on self-supervised approaches. I am passionate about advancing the state-of-the-art, publishing my work, and translating research to solve real-world problems. I envision a future where computers are capable of human-like perception and visual reasoning.
 
 I am fluent in English and Mandarin Chinese. My hobbies include tennis, ping pong, clarinet, nature walks, hacking, and writing.
+
+---------------------------
+
+### Resume/CV
+[[My CV](pdf/davidfan_cv.pdf)]  
 
 ---------------------------
 ### Education
@@ -21,18 +24,14 @@ B.S.E. in Computer Science and Minor in Statistics and Machine Learning | *Magna
 
 ---------------------------
 
-### Resume/CV
-[[My CV](pdf/davidfan_cv.pdf)]  
-
----------------------------
-
 ### Skills
+**Research Areas**: Self-supervised learning, representation learning, video / multimodal understanding, transformers  
+**AI Libraries / Frameworks**: PyTorch, Tensorflow
 **Programming Languages**: Python, Java, R, Javascript, Go, OCaml, MatLab, C/C++  
-**Libraries**: PyTorch, TorchScript, Tensorflow, OpenCV, Shiny  
-**Web Development**: Django, Express.js | HTML5, React, Hugo, Jekyll  
+**Web Development**: Django, HTML5, React, Hugo, Jekyll  
 **Databases**: MySQL, MongoDB, DynamoDB  
 **Other**: AWS, Docker, Git, UNIX, LaTeX, Leadership  
-**Keywords**: Computer Vision, Deep Learning, Research, Software Engineering, Data Visualization
+**Keywords**: Computer Vision, Deep Learning, AI, Machine Learning, Research, Software Engineering, Data Visualization
 
 ---------------------------
 ### Coursework

@@ -6,11 +6,11 @@ description = "publications"
 +++
 
 #### Peer-Reviewed
-{{% portfolio image="/images/portfolio/coming_soon.png" alt="ICCV 2023" %}}
+{{% portfolio image="/images/portfolio/mgm_mae.png" alt="ICCV 2023" %}}
 ### Motion-Guided Masking for Spatiotemporal Representation Learning
-**David Fan***, Jue Wang, Shuai Liao, Yi Zhu, Vimal Bhat, Hector Santos-Villalobos, Rohith MV, [Xinyu Li](https://arthurlxy.github.io/).  
+**David Fan***, [Jue Wang](https://3xwangdot.github.io/), Shuai Liao, [Yi Zhu](https://bryanyzhu.github.io/), Vimal Bhat, Hector Santos-Villalobos, Rohith MV, [Xinyu Li](https://arthurlxy.github.io/).  
 ICCV 2023.  
-[Paper](https://arxiv.org/abs/2308.12962), [Blog Post Coming Up]
+[Paper](https://arxiv.org/abs/2308.12962), [Amazon Blog](https://www.amazon.science/blog/better-foundation-models-for-video-representation)
 {{% /portfolio %}}
 
 {{% portfolio image="/images/portfolio/video_nnclr.jpg" alt="ICLR 2023 Workshop on Mathematical and Empirical Understanding of Foundation Models" %}}

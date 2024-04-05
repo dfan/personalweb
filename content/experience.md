@@ -7,14 +7,19 @@ description = "experience"
 
 ---------------------------
 ### Industry
-[**Amazon**](https://amazon.com) | *Seattle, WA*  
+[**Amazon**](https://amazon.com) | *Seattle, WA &rarr; New York, NY*  
 **Applied Scientist**, May 2021 - present  
 **Research Engineer**, July 2020 - May 2021
 
-- Developed self-supervised method for scene boundary detection that **improves state-of-the-art by 13%** even compared to fully-supervised methods, while **reducing data labeling requirements by 75%** and improving inference time by 84%.
-    - Second-author paper accepted to CVPR 2021. Authored [blog post](https://www.amazon.science/blog/automatically-identifying-scene-boundaries-in-movies-and-tv-shows) on Amazon Research website.
-- Developed novel self-supervised video representation learning method that improves state-of-the-art in video action recognition. Mentored research intern to full-time offer. Paper is under review.
-- Explored audiovisual contrastive learning and vision transformers for video action recognition and applications in cinematic content understanding.
+- Trained 1B param multimodal foundation model with large-scale vision-language-audio pretraining. Out- performs OpenAI CLIP by 25% on internal zero-shot classification and retrieval benchmarks.
+- Enabled [automated video advertisement insertion](https://www.aboutamazon.com/news/entertainment/prime-video-update-announces-limited-ads) (CEO-level goal) with novel video segmentation model.
+- Developed embeddings for visual search and recommendation which outperform baseline recsys by 5%.
+- Trained multimodal transformers for automated content moderation and compliance.
+- Built distributed PyTorch training codebase and managed compute infrastructure for larger org of 30+ ICs.
+- [[ICCV 2023 (1st auth)](https://arxiv.org/abs/2308.12962)] Improves SOTA video masked autoencoders by 5% in action recognition. [Amazon blog](https://www.amazon.science/blog/better-foundation-models-for-video-representation).
+- [[ICLR 2023 (1st auth)](https://arxiv.org/abs/2303.07317)] Nearest-neighbor sampling improves positive pair diversity for video contrastive learning.
+- [[CVPR 2021](https://arxiv.org/abs/2104.13537)] Self-supervised learning improves state-of-the-art movie segmentation by 13% while reducing annotation by 75% (saving $200K/yr) and speeding up training by 84%. [Amazon blog](https://www.amazon.science/blog/automatically-identifying-scene-boundaries-in-movies-and-tv-shows).
+- Mentored two research interns to full-time offer.
 
 [**Amazon Web Services (AI)**](https://aws.amazon.com) | *Seattle, WA*  
 **Software Engineer**, August 2019 - July 2020

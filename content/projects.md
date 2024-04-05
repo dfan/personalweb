@@ -5,6 +5,16 @@ thumbnail = "images/thumbnails/projects.png"
 description = "projects"
 +++
 
+{{% portfolio image="/images/portfolio/mgm_mae.png" alt="ICCV 2023" %}}
+### Motion-Guided Masking for Spatiotemporal Representation Learning
+BERT popularized masked autoencoders for language modeling. Recent works have extended masked autoencoder to image and video domain by reconstructing randomly masked out image/video patches. These works show that MAE is a promising paradigm for scaling up self-supervised video pretraining. However, random masking assumes that information density is uniformly distributed.
+
+In this work, we argue that masking saliency is key to elevating the efficacy of MAE for video. Specifically, we show that salient regions of video are tied to high motion. Thus, we propose to mask out the regions with highest motion. Vanilla video MAE equipped with our motion-guided masking (MGM) algorithm outperforms previous SOTA with up to 3x fewer pretraining epochs. We achieve state-of-the-art results for ViT-B on Kinetics-400 (81.7%) and Something-Something v2 (72.1%) and show that our MGM generalizes better to small datasets as well.
+
+[Paper](https://arxiv.org/abs/2308.12962), [Amazon Blog](https://www.amazon.science/blog/better-foundation-models-for-video-representation)
+
+{{% /portfolio %}}
+
 {{% portfolio image="/images/portfolio/shotcol_cvpr2021.jpeg" alt="CVPR 2021" %}}
 ### Shot Contrastive Self-Supervised Learning for Scene Boundary Detection
 Scenes are critical to long-form video understanding as they delineate semantic progression. Localization of scenes is an important problem that is foundational to higher-level tasks in video understanding. Movies are particularly interesting as they are longer, more semantically complicated, and more visually challenging compared to most video datasets which contain clean short videos.
