@@ -15,6 +15,13 @@ In this work, we argue that masking saliency is key to elevating the efficacy of
 
 {{% /portfolio %}}
 
+{{% portfolio image="/images/portfolio/video_nnclr.jpg" alt="ICLR 2023 Workshop on Mathematical and Empirical Understanding of Foundation Models" %}}
+### Nearest-Neighbor Inter-Intra Contrastive Learning from Unlabeled Videos
+Popular contrastive learning methods for video such as CVRL sample non-overlapping positive subclips from within the same video. However, this intra-video sampling limits positive pair diversity because video similarity can transcend class boundaries. For instance, videos about skiing and snowboarding are more similar to each other than to videos about animals. Taking inspiration from NNCLR, we introduce global nearest-neighbor positive key sampling from a momentum queue to improve positive pair diversity. We show that this improves video representations for a variety of downstream video recognition and retrieval tasks, even in zero-shot settings.
+
+[Paper](https://arxiv.org/abs/2303.07317)
+{{% /portfolio %}}
+
 {{% portfolio image="/images/portfolio/shotcol_cvpr2021.jpeg" alt="CVPR 2021" %}}
 ### Shot Contrastive Self-Supervised Learning for Scene Boundary Detection
 Scenes are critical to long-form video understanding as they delineate semantic progression. Localization of scenes is an important problem that is foundational to higher-level tasks in video understanding. Movies are particularly interesting as they are longer, more semantically complicated, and more visually challenging compared to most video datasets which contain clean short videos.

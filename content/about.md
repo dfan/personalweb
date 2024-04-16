@@ -26,7 +26,7 @@ B.S.E. in Computer Science and Minor in Statistics and Machine Learning | *Magna
 
 ### Skills
 **Research Areas**: Self-supervised learning, representation learning, video / multimodal understanding, transformers  
-**AI Libraries / Frameworks**: PyTorch, Tensorflow
+**AI Libraries / Frameworks**: PyTorch, Tensorflow  
 **Programming Languages**: Python, Java, R, Javascript, Go, OCaml, MatLab, C/C++  
 **Web Development**: Django, HTML5, React, Hugo, Jekyll  
 **Databases**: MySQL, MongoDB, DynamoDB  
