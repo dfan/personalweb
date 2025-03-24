@@ -96,11 +96,6 @@
     border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
-/* More pronounced section separation */
-.section-title {
-    margin-top: 80px;
-}
-
 /* Subtle highlight for figure sections */
 .figure-section {
     background-color: #F9FAFB;

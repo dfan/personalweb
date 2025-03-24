@@ -25,10 +25,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#abstract">Overview</a>
+                        <a class="nav-link" href="#abstract-and-figure">Overview</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#visual-ssl-2">Visual SSL 2.0</a>
+                        <a class="nav-link" href="#approach">Approach</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#scaling-experiments">Results</a>
@@ -51,7 +51,7 @@
     <header class="header-section" id="overview">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto text-center">
+                <div class="col-lg-11 mx-auto text-center">
                     <h1 class="paper-title">Scaling Language-Free Visual Representation Learning</h1>
                     <h2 class="paper-subtitle">Effective visual pretraining without language supervision.</h2>
                     <div class="author-line">
@@ -64,9 +64,9 @@
                         <span><a href="https://koustuvsinha.com/" class="author-link">Koustuv Sinha<sup>1</sup></a></span>
                         <!-- <span class="mx-2 text-light">•</span> -->
                         <span><a href="https://liuzhuang13.github.io/" class="author-link">Zhuang Liu<sup>1,3</sup></a></span>
+                        <span><a href="https://xinleic.xyz/" class="author-link">Xinlei Chen<sup>1</sup></a></span>
                     </div>
                     <div class="author-line">
-                        <span><a href="https://xinleic.xyz/" class="author-link">Xinlei Chen<sup>1</sup></a></span>
                         <!-- <span class="mx-2 text-light">•</span> -->
                         <span><a href="https://scholar.google.ca/citations?user=cMPKe9UAAAAJ&hl=en" class="author-link">Michael Rabbat<sup>1</sup></a></span>
                         <!-- <span class="mx-2 text-light">•</span> -->
@@ -109,50 +109,50 @@
 
     <!-- Main Content -->
     <main class="container">
-        <!-- Abstract -->
-        <section class="row" id="abstract">
-            <div class="col-lg-10 mx-auto">
-                <div class="abstract">
+        <!-- Modify the Abstract and Key Visual sections to be in a single row with two columns -->
+        <section class="row" id="abstract-and-figure">
+            <div class="col-lg-11 mx-auto">
+                <div class="row">
                     <p class="lead fw-bold" style="color: var(--primary-color); border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 10px; margin-bottom: 15px;">
                         Is language supervision required to learn effective visual representations for multimodal tasks?
                     </p>
-                    
                     <div class="p-3 mb-4 rounded" style="background-color: rgba(37, 99, 235, 0.05); border-left: 4px solid var(--primary-color);">
                         <p class="mb-0"><strong>Not necessarily</strong>! Models trained with visual self-supervision alone can learn features with strong multimodal capabilities.</p>
-                        <!-- , that rival those of language-supervised models, given adequate model capacity and training data -->
+                    </div>
+                    <!-- Abstract Column -->
+                    <div class="col-lg-6">
+                        <!-- <div class="abstract"> -->
+                            
+                            
+                            <p>
+                                Visual Self-Supervised Learning (SSL) has historically underperformed Contrastive Language-Image Pretraining (CLIP) in multimodal settings, such as Visual Question Answering (VQA). This performance gap is often attributed to the semantics introduced by language supervision, even though visual SSL and CLIP models are typically trained on <strong>different data distributions</strong>.
+                            </p>
+                            <p>
+                                We investigate this question by training both visual SSL and CLIP models on MC-2B (2 billion images from the MetaCLIP dataset) and scaling model capacity from 1B to 7B parameters. Our findings reveal that visual SSL can match and even surpass language-supervised methods at scale, across diverse VQA tasks — including traditionally text-centric categories such as OCR & Chart understanding — without any language supervision.
+                            </p>
+                            <p class="mb-0">
+                                These results suggest that vision-centric representation learning has significant untapped potential.
+                            </p>
+                        <!-- </div> -->
                     </div>
                     
-                    <p>
-                        Visual Self-Supervised Learning (SSL) has historically underperformed in multimodal settings, such as Visual Question Answering (VQA), where language-supervised models such as CLIP consistently achieve better results. This performance gap is often attributed to the semantics introduced by language supervision, even though visual SSL and CLIP models are typically trained on <strong>different data distributions</strong>.
-                    </p>
-                    <p>
-                        We investigate this question by training both visual SSL and CLIP models on MC-2B (2 billion images from the MetaCLIP dataset) and scaling model capacity from 1B to 7B parameters. Our findings reveal that visual SSL can match and even surpass language-supervised methods at scale, across diverse VQA tasks — including traditionally text-centric categories such as OCR & Chart understanding — without any language supervision.
-                    </p>
-                    <p class="mb-0">
-                        By controlling for data distribution and conducting systematic scaling experiments, we demonstrate that visual SSL methods scale more effectively than CLIP with increased model size and training data. These results suggest that vision-centric representation learning has significant untapped potential.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Key Visual -->
-        <section id="key-visual" class="figure-section">
-            <div class="row">
-                <div class="col-lg-6 mx-auto">
-                    <div class="figure-container">
-                        <img src="assets/figures/fig1_simple.png" alt="Web-SSL Scaling Performance" class="img-fluid">
-                        <div class="figure-caption">
-                            <strong>Figure 1:</strong> Web-SSL scales well with both model size and training data, demonstrating that visual self-supervised learning can excel at diverse multimodal tasks, including OCR & Chart understanding — without using any language supervision.
-                        </div>
+                    <!-- Figure 1 Column -->
+                    <div class="col-lg-6">
+                        <!-- <div class="figure-container"> -->
+                            <img src="assets/figures/fig1_simple.png" alt="Web-SSL Scaling Performance" class="img-fluid">
+                            <div class="figure-caption">
+                                Web-SSL scales well with both model size and training data, demonstrating that visual self-supervised learning can excel at diverse multimodal tasks, including OCR & Chart understanding — without using any language.
+                            </div>
+                        <!-- </div> -->
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Visual SSL 2.0 -->
-        <section class="row" id="visual-ssl-2">
-            <div class="col-lg-10 mx-auto">
-                <h2 class="section-title">Visual SSL <i>2.0</i> Changes</h2>
+        <section class="row" id="approach">
+            <div class="col-lg-11 mx-auto">
+                <h2 class="section-title">Web-SSL: Visual SSL 1.0 &#8594 <i>2.0</i></h2>
                 
                 <div class="row mb-5">
                     <!-- Box 1: Training Data -->
@@ -198,9 +198,9 @@
         </section>
 
         <!-- Vision Model Scales Section -->
-        <section id="scaling-experiments" class="mt-5">
+        <section id="scaling-experiments">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
+                <div class="col-lg-11 mx-auto">
                     <h2 class="section-title">Scaling Visual SSL</h2>
                     
                     <!-- Model Scaling Visualization -->
@@ -268,7 +268,7 @@
                     </div>
                     
                     <!-- Data Scaling Visualization -->
-                    <div class="row mt-5">
+                    <div class="row mt-2">
                         <div class="col-lg-12">
                             <div class="scaling-card data-scaling p-4">
                                 <h3 class="scaling-title text-center mb-4">Effect of Number of Training Samples</h3>
@@ -336,9 +336,9 @@
         </section>
 
         <!-- Questions & Analysis Section -->
-        <section id="research-questions" class="mt-5">
+        <section id="research-questions" class="mt-2">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
+                <div class="col-lg-11 mx-auto">
                     <h2 class="section-title">Analysis of Scaling Results</h2>
                     
                     <!-- Navigation Pills for Questions -->
@@ -656,7 +656,7 @@
                                 As model size and data increase, SSL models naturally develop representational alignment with language models, despite not receiving language supervision.
                             </p>
                             <div class="row align-items-center">
-                                <div class="col-md-7">
+                                <div class="col-md-6">
                                     <div class="px-3">
                                     
                                         <div class="alignment-factors mt-4">
@@ -682,7 +682,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-5">
+                                <div class="col-md-6">
                                     <div class="p-3 rounded shadow-sm" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
                                         <img src="assets/figures/alignment_scatter_plot.png" alt="LLM alignment visualization" class="img-fluid rounded">
                                         <p class="text-center mt-2 mb-0" style="font-size: 0.9rem; font-style: italic;">Measurement of representational alignment between visual features and Llama-3 8B/70B language models, <i>without</i> any finetuning or alignment procedure.</p>
@@ -696,9 +696,9 @@
         </section>
 
         <!-- Key Takeaways Section -->
-        <section id="conclusions" class="mt-5">
+        <section id="conclusions" class="mt-2">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
+                <div class="col-lg-11 mx-auto">
                     <h2 class="section-title">Key Takeaways</h2>
                     
                     <div class="highlight-box p-4" style="background-color: rgba(37, 99, 235, 0.05); border-radius: 15px; border-left: 8px solid var(--primary-color);">
@@ -710,7 +710,7 @@
                                             <span class="badge bg-primary p-2 me-3" style="font-size: 1rem; min-width: 36px; text-align: center;">1</span>
                                             <div>
                                                 <h4 class="mb-1">Visual SSL Scales</h4>
-                                                <p class="mb-0">Visual SSL models improve consistently with both model size (+4.9% avg. VQA accuracy from 1B to 7B parameters) and training data volume (+5.0% avg. VQA accuracy from 1B to 8B examples). In contrast, CLIP models plateau beyond moderate sizes.</p>
+                                                <p class="mb-0">Visual SSL models improve consistently with both increasing model size and more training data. In contrast, CLIP models plateau beyond moderate sizes.</p>
                                             </div>
                                         </div>
                                     </li>
@@ -719,7 +719,7 @@
                                         <div class="d-flex align-items-center">
                                             <span class="badge bg-primary p-2 me-3" style="font-size: 1rem; min-width: 36px; text-align: center;">2</span>
                                             <div>
-                                                <h4 class="mb-1">Data Distribution Matters A Lot</h4>
+                                                <h4 class="mb-1">Pretraining Data Distribution Matters A Lot</h4>
                                                 <p class="mb-0">SSL models trained on traditional, smaller datasets like ImageNet-1k (1.2M images) show negligible improvements with increased parameter count. Diverse web-scale data is necessary to enable effective scaling of visual SSL models.</p>
                                             </div>
                                         </div>
@@ -730,7 +730,7 @@
                                             <span class="badge bg-primary p-2 me-3" style="font-size: 1rem; min-width: 36px; text-align: center;">3</span>
                                             <div>
                                                 <h4 class="mb-1">Text-Rich Images Enhance OCR Capabilities</h4>
-                                                <p class="mb-0">Training on a data subset containing text-rich images (1.3% of total data) significantly improves OCR & Chart understanding (+13.6% absolute improvement) without requiring language supervision, even outperforming comparable CLIP models by +4.3%.</p>
+                                                <p class="mb-0">Training on a data subset containing text-rich images (1.3% of total data) significantly improves OCR & Chart understanding, even outperforming CLIP models of the same size trained on full data.</p>
                                             </div>
                                         </div>
                                     </li>
@@ -753,9 +753,9 @@
         </section>
 
         <!-- Resources Section -->
-        <section id="resources" class="mt-5">
+        <section id="resources" class="mt-2">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
+                <div class="col-lg-11 mx-auto">
                     <h2 class="section-title">Resources</h2>
                     <div class="row g-4">
                         <div class="col-md-4">
@@ -800,9 +800,9 @@
         </section>
 
         <!-- Citation Section -->
-        <section id="citation" class="mt-5">
+        <section id="citation" class="mt-2">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
+                <div class="col-lg-11 mx-auto">
                     <h2 class="section-title">Citation</h2>
                     <div class="bg-light p-4 rounded">
                         <pre><code>@inproceedings{fan2025scaling,
@@ -816,9 +816,9 @@
             </div>
         </section>
         <!-- Frequently Asked Questions Section -->
-        <section id="faq" class="mt-5">
+        <section id="faq" class="mt-2">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
+                <div class="col-lg-11 mx-auto">
                     <h2 class="section-title">FAQ</h2>
                     <div class="accordion" id="faqAccordion">
                         <div class="accordion-item">
@@ -876,7 +876,7 @@
 
     <section>
         <div class="row">
-            <div class="col-lg-10 mx-auto text-center">
+            <div class="col-lg-11 mx-auto text-center">
                 <h2 class="section-title">Correspondence</h2>
                 <p>Please reach out to David Fan and Shengbang (Peter) Tong with any questions.</p>
                 <p>davidfan [at] meta [dot] com</p>
@@ -905,5 +905,22 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Select all navigation links in your custom nav pills container
+        const navLinks = document.querySelectorAll('.custom-nav-pills a.nav-link');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+            // Optionally prevent default if you don't want the page jump
+            // e.preventDefault();
+        
+            // Remove the active class from all links
+            navLinks.forEach(btn => btn.classList.remove('active'));
+        
+            // Add the active class to the clicked link
+            this.classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>

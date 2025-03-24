@@ -169,14 +169,14 @@ body {
 }
 
 /* Abstract */
-.abstract {
-    background-color: var(--light-color);
-    padding: 30px;
-    border-radius: 15px;
-    margin: 40px 0;
-    border-left: 5px solid var(--accent-color);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-}
+/* .abstract { */
+    /* background-color: var(--light-color); */
+    /* padding: 30px; */
+    /* border-radius: 15px; */
+    /* margin: 40px 0; */
+    /* border-left: 5px solid var(--accent-color); */
+    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); */
+/* } */
 
 /* Section title */
 .section-title {
@@ -761,4 +761,436 @@ body {
     .data-table td {
         padding: 8px 5px;
     }
+}
+
+/* Mobile-Friendly CSS Updates - Only Applied to Mobile Devices */
+
+/* Only apply these base styles at mobile breakpoints */
+@media (max-width: 768px) {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-size: 16px; /* Slightly smaller base font for mobile */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    
+    /* Mobile-First Container */
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /* Responsive Typography */
+    h1, h2, h3, h4, h5, h6 {
+        word-wrap: break-word; /* Prevent text overflow */
+        hyphens: auto; /* Enable hyphenation for better text wrapping */
+    }
+}
+
+/* Mobile Navigation Improvements */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 0;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem; /* Smaller brand text on mobile */
+    }
+    
+    .navbar-toggler {
+        border: none;
+        padding: 8px;
+        margin-right: 5px;
+    }
+    
+    .navbar-toggler:focus {
+        box-shadow: none;
+        outline: none;
+    }
+    
+    .navbar-toggler-icon {
+        width: 1.2em;
+        height: 1.2em;
+    }
+}
+
+/* Header Section Responsiveness - Mobile Only */
+@media (max-width: 768px) {
+    .header-section {
+        padding: 60px 0 40px 0; /* Reduced padding on mobile */
+    }
+    
+    .paper-title {
+        font-size: 2rem; /* Smaller title on mobile */
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+    
+    .paper-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+    
+    /* Responsive Author Line */
+    .author-line {
+        font-size: 0.9rem;
+        gap: 8px 12px;
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+    
+    /* Institution Logos Responsive */
+    .institution-logos {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .institution-logo {
+        width: 100px; /* Smaller logos on mobile */
+        max-height: 30px;
+    }
+    
+    /* Responsive Action Buttons */
+    .header-section .btn {
+        margin-bottom: 10px;
+        font-size: 0.85rem;
+        padding: 8px 12px;
+        width: auto;
+        display: inline-block;
+    }
+}
+
+/* Figure Responsiveness - Mobile Only */
+@media (max-width: 768px) {
+    .figure-container img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .figure-caption {
+        font-size: 0.85rem;
+        max-width: 100%;
+    }
+    
+    /* Table Responsiveness */
+    .data-table {
+        font-size: 0.9rem; /* Increased from 0.8rem */
+    }
+    
+    .data-table th, 
+    .data-table td {
+        padding: 8px 6px; /* Increased from 6px 4px */
+    }
+}
+
+/* Mobile Responsiveness - Mid-range Mobile */
+@media (max-width: 768px) {
+    body {
+        font-size: 17px; /* Increased from 15px */
+    }
+    
+    .paper-title {
+        font-size: 2rem; /* Increased from 1.8rem */
+    }
+    
+    .paper-subtitle {
+        font-size: 1.3rem; /* Increased from 1.1rem */
+    }
+    
+    .section-title {
+        font-size: 24px; /* Increased from 22px */
+        margin: 35px 0 20px 0;
+    }
+    
+    .author-line {
+        font-size: 0.95rem; /* Increased from 0.85rem */
+        line-height: 1.4;
+    }
+    
+    .question-number {
+        width: 32px; /* Slightly increased */
+        height: 32px; /* Slightly increased */
+        font-size: 1rem; /* Increased from 0.9rem */
+    }
+    
+    .question-title {
+        font-size: 1.25rem; /* Increased from 1.1rem */
+    }
+    
+    .question-answer {
+        font-size: 1.05rem; /* Increased from 0.95rem */
+    }
+    
+    /* Better spacing for mobile */
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    
+    .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, 
+    .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+    .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+    .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    /* Stack columns on mobile */
+    .col-md-4, .col-md-6, .col-md-5, .col-md-7 {
+        margin-bottom: 20px;
+    }
+    
+    /* Navigation pills */
+    .custom-nav-pills {
+        flex-direction: column;
+        gap: 5px;
+        padding: 0 5px;
+    }
+    
+    .custom-nav-pills .nav-link {
+        width: 100%;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    
+    /* Accordion improvements */
+    .accordion-button {
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+    
+    .accordion-body {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+    
+    /* Card improvements */
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    .card-body {
+        padding: 15px;
+    }
+    
+    /* Table scroll for mobile */
+    .table-responsive {
+        border: none;
+        margin-bottom: 20px;
+    }
+    
+    /* Fixed table header for mobile scrolling */
+    .data-table thead th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    
+    .data-table .model-cell {
+        min-width: 120px;
+    }
+    
+    /* Better spacing for lists */
+    ul, ol {
+        padding-left: 20px;
+    }
+    
+    .findings-list .finding-item {
+        padding-left: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .findings-list .finding-item::before {
+        width: 20px;
+        height: 20px;
+        font-size: 0.7rem;
+    }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 576px) {
+    body {
+        font-size: 16px; /* Increased from 14px */
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .header-section {
+        padding: 40px 0 30px 0;
+    }
+    
+    .paper-title {
+        font-size: 1.8rem; /* Increased from 1.6rem */
+    }
+    
+    .paper-subtitle {
+        font-size: 1.2rem; /* Increased from 1rem */
+    }
+    
+    .section-title {
+        font-size: 22px; /* Increased from 20px */
+    }
+    
+    .btn {
+        font-size: 0.9rem; /* Increased from 0.8rem */
+        padding: 8px 14px; /* Slightly increased padding */
+    }
+    
+    /* Image scaling for very small devices */
+    .figure-container {
+        padding: 10px;
+    }
+    
+    /* Better touch targets */
+    .nav-link, .accordion-button {
+        min-height: 44px; /* Minimum touch target size */
+    }
+    
+    /* Further improve table readability */
+    .data-table {
+        font-size: 0.85rem; /* Increased from 0.75rem */
+    }
+    
+    /* Improve code block readability */
+    pre {
+        padding: 10px;
+        font-size: 0.85rem; /* Increased from 0.75rem */
+        overflow-x: auto;
+    }
+    
+    /* Improve footer spacing */
+    footer {
+        margin-top: 60px;
+        padding: 30px 0;
+    }
+}
+
+/* Fix for large lead text on mobile */
+@media (max-width: 768px) {
+    p.lead.fw-bold {
+        font-size: 1.2rem !important; /* Increased from 1rem */
+        line-height: 1.4;
+        margin-bottom: 12px;
+    }
+}
+
+/* Touch Optimizations - Only for Touch Devices */
+@media (hover: none) and (max-width: 768px) {
+    /* Disable hover effects on touch devices */
+    .resources-card:hover, 
+    .key-point-card:hover,
+    .research-question:hover,
+    .figure-container:hover,
+    .result-card:hover,
+    .scaling-card:hover {
+        transform: none;
+        box-shadow: var(--box-shadow);
+    }
+    
+    /* Improve tap targets */
+    button, 
+    .btn, 
+    a.nav-link, 
+    .author-link {
+        padding: 10px 15px;
+    }
+    
+    /* Indicate tappable elements */
+    a.nav-link:active, 
+    .btn:active,
+    .accordion-button:active {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+}
+
+/* Additional Mobile-Only Improvements */
+@media (max-width: 768px) {
+    /* Fix overflow issues in tables */
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Fix for horizontal scroll on mobile in fluid containers */
+    .container-fluid {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* Improve progress bar readability on mobile */
+    .progress {
+        height: 12px;
+    }
+    
+    /* Ensure tapping on accordion shows visual feedback */
+    .accordion-button:active {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    
+    /* Make sure all images resize properly */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Improve form element spacing on mobile */
+    input, select, textarea {
+        margin-bottom: 15px;
+    }
+    
+    /* Ensure code and pre elements don't overflow */
+    code, pre {
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+    
+    /* Ensure fixed position elements don't cause issues */
+    .sticky-top {
+        z-index: 1020;
+    }
+    
+    /* Improve modal dialogs on mobile */
+    .modal-dialog {
+        margin: 10px;
+    }
+    
+    /* Make sure buttons have sufficient spacing between them on mobile */
+    .btn {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    
+    /* Fix Bootstrap columns so they work on mobile */
+    .row > [class^="col-"] {
+        margin-bottom: 20px;
+    }
+}
+
+/* Critical Mobile Fixes - These are essential regardless of screen size */
+/* These should be minimal and only target truly problematic areas */
+
+/* Make sure tables don't break layouts on all screen sizes */
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Ensure images don't overflow their containers */
+img {
+    max-width: 100%;
+}
+
+/* Fix for Bootstrap navbar toggle */
+.navbar-collapse {
+    max-height: 80vh;
+    overflow-y: auto;
 }
