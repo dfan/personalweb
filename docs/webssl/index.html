@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- For social media thumbnail preview -->
+    <meta property="og:image" content="https://davidfan.io/webssl/assets/figures/scale_model_wide_gradient.png" />
     <title>Web-SSL: Scaling Language-Free Visual Representation Learning</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
@@ -370,8 +372,8 @@
                                     <div class="px-3">
                                         <h4 class="mb-3" style="color: var(--secondary-color);">Findings:</h4>
                                         <ul class="findings-list">
-                                            <li class="finding-item">Web-MAE and Web-DINO improve consistently with model size (+2.3% for Web-MAE and +4.9% for Web-DINO from 1B to 5B params on average VQA)</li>
-                                            <li class="finding-item">Web-MAE achieves better OCR & Chart performance (+6.1% compared to Web-DINO at 5B parameters)</li>
+                                            <li class="finding-item">Web-MAE and Web-DINO improve consistently with model size (+2.3% for Web-MAE and +3.9% for Web-DINO from 1B to 5B params on average VQA)</li>
+                                            <li class="finding-item">Web-MAE achieves better OCR & Chart performance (+2.5% compared to Web-DINO at 5B parameters)</li>
                                         </ul>
                                         <p>These results demonstrate that the observed scaling behavior generalizes across different visual SSL methods, suggesting that this phenomenon is intrinsic to the visual self-supervised paradigm, rather than any specific method.</p>
                                     </div>
@@ -387,7 +389,7 @@
                         </div>
                         <div class="question-answer">
                             <p class="lead fw-bold" style="color: var(--primary-color); border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 10px; margin-bottom: 15px;">
-                                No, models trained on smaller datasets such as ImageNet-1k (1.2M images) improve negligibly with model size, highlighting the critical importance of diverse web-scale data.
+                                No, models trained on smaller datasets such as ImageNet-1k (1.2M unique images) improve negligibly with model size, highlighting the critical importance of diverse web-scale data.
                             </p>
                             <div class="row align-items-center">
                                 <div class="col-md-6">
@@ -396,15 +398,15 @@
                                             <h4 class="mb-3" style="color: var(--secondary-color);">Data Distribution Comparison</h4>
                                             <div class="d-flex align-items-center mb-3">
                                                 <div style="width: 120px; height: 20px; background: linear-gradient(90deg, #e9ecef 30%, #ced4da 100%); border-radius: 10px;" class="me-3"></div>
-                                                <span>ImageNet-1k (1.2M images): <strong>Insignificant improvement</strong> (+0.1% from 1B to 3B)</span>
+                                                <span>ImageNet-1k (1.2M unique images): <strong>Negligible improvement</strong> (-0.1% from 1B to 3B)</span>
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <div style="width: 120px; height: 20px; background: linear-gradient(90deg, #2563EB 30%, #1d4ed8 100%); border-radius: 10px;" class="me-3"></div>
-                                                <span>MetaCLIP data (2B+ images): <strong>Significant improvement</strong> (+4.9% from 1B to 3B)</span>
+                                                <span>MetaCLIP data (2B+ unique images): <strong>Noticeable improvement</strong> (+2.7% from 1B to 3B)</span>
                                             </div>
                                         </div>
                                         <div class="mt-4">
-                                            <p>This parallels observations in language model research where data diversity and scale are essential for enabling effective model scaling.</p>
+                                            <p>This parallels observations from language model research where data diversity and scale are essential for effective model scaling.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -446,25 +448,25 @@
                                                         <td>MetaCLIP ViT-G</td>
                                                         <td>86.4%</td>
                                                         <td>46.7%</td>
-                                                        <td>0.524</td>
+                                                        <td>0.415</td>
                                                     </tr>
                                                     <tr>
                                                         <td>DINOv2 ViT-g</td>
-                                                        <td>86.0%</td>
+                                                        <td>86.5%</td>
                                                         <td>53.0%</td>
-                                                        <td>0.344</td>
+                                                        <td>0.298</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Web-DINO ViT-1B</td>
                                                         <td>84.7%</td>
                                                         <td>51.0%</td>
-                                                        <td>0.364</td>
+                                                        <td>0.345</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Web-DINO ViT-7B</td>
                                                         <td>86.0%</td>
                                                         <td>54.7%</td>
-                                                        <td>0.380</td>
+                                                        <td>0.339</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -478,7 +480,7 @@
                                 <div class="col-md-6">
                                     <div class="p-3 rounded shadow-sm" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
                                         <img src="assets/figures/vision_eval_perf.png" alt="Classic vision task performance" class="img-fluid rounded">
-                                        <p class="text-center mt-2 mb-0" style="font-size: 0.9rem; font-style: italic;">Comparative performance trends on ImageNet, ADE20K and NYU Depth benchmarks</p>
+                                        <p class="text-center mt-2 mb-0" style="font-size: 0.9rem; font-style: italic;">Performance trends on ImageNet, ADE20K and NYU Depth.</p>
                                     </div>
                                 </div>
                             </div>
@@ -488,7 +490,7 @@
                     <div id="question4" class="research-question">
                         <div class="question-header">
                             <div class="question-number">4</div>
-                            <h3 class="question-title">Why does scaling up visual SSL improves OCR & Chart performance?</h3>
+                            <h3 class="question-title">Why does scaling visual SSL improve OCR & Chart performance?</h3>
                         </div>
                         <div class="question-answer">
                             <p class="lead fw-bold" style="color: var(--primary-color); border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 10px; margin-bottom: 15px;">
@@ -519,7 +521,7 @@
                                             </div>
                                         </div>
                                         <div class="figure-caption text-center mt-3">
-                                            <strong>Examples of data filtering.</strong> Left: Random samples from MC-2B. Middle: Images with text (50.3% of data). Right: Charts, tables and documents (1.3% of data).
+                                            <strong>Examples of data filtering.</strong> <i>Left:</i> Random samples from MC-2B. <i>Middle</i>: Images with text (50.3% of data). <i>Right</i>: Charts, tables and documents (1.3% of data).
                                         </div>
                                     </div>
                                 </div>
@@ -553,11 +555,11 @@
                                                     <td>100%</td>
                                                     <td>53.0</td>
                                                     <td>72.2</td>
-                                                    <td>48.8</td>
+                                                    <td class="highlight-cell">48.8</td>
                                                     <td>55.0</td>
-                                                    <td class="highlight-cell">36.1</td>
+                                                    <td>36.1</td>
                                                     <td>32.8</td>
-                                                    <td>32.9</td>
+                                                    <td class="highlight-cell">32.9</td>
                                                     <td>52.6</td>
                                                     <td>26.0</td>
                                                 </tr>
@@ -567,7 +569,7 @@
                                                     <td>50.8</td>
                                                     <td>72.8</td>
                                                     <td>47.1</td>
-                                                    <td>56.4</td>
+                                                    <td class="highlight-cell">56.4</td>
                                                     <td>26.8</td>
                                                     <td>23.3</td>
                                                     <td>15.6</td>
@@ -576,9 +578,9 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="model-cell">Web-DINO ViT-2B</td>
-                                                    <td>50.3%</td>
+                                                    <td>Light (50.3%)</td>
                                                     <td>53.4</td>
-                                                    <td>73.0</td>
+                                                    <td class="highlight-cell">73.0</td>
                                                     <td>51.7</td>
                                                     <td>55.6</td>
                                                     <td>33.2</td>
@@ -589,16 +591,16 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="model-cell">Web-DINO ViT-2B</td>
-                                                    <td>1.3%</td>
-                                                    <td>53.7</td>
+                                                    <td>Heavy (1.3%)</td>
+                                                    <td class="highlight-cell">53.7</td>
                                                     <td>70.7</td>
                                                     <td>47.3</td>
                                                     <td>56.2</td>
                                                     <td class="highlight-cell">40.4</td>
-                                                    <td>47.5</td>
+                                                    <td class="highlight-cell">47.5</td>
                                                     <td>29.4</td>
-                                                    <td>52.8</td>
-                                                    <td>32.0</td>
+                                                    <td class="highlight-cell">52.8</td>
+                                                    <td class="highlight-cell">32.0</td>
                                                 </tr>
                                                 <tr class="header-row">
                                                     <td class="model-cell">Web-DINO (Heavy Filter) vs Full Data</td>
@@ -653,32 +655,32 @@
                         </div>
                         <div class="question-answer">
                             <p class="lead fw-bold" style="color: var(--primary-color); border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 10px; margin-bottom: 15px;">
-                                As model size and data increase, SSL models naturally develop representational alignment with language models, despite not receiving language supervision.
+                                As model size and data increase, SSL models naturally develop representational alignment with language models, despite receiving no language supervision.
                             </p>
                             <div class="row align-items-center">
                                 <div class="col-md-6">
                                     <div class="px-3">
                                     
                                         <div class="alignment-factors mt-4">
-                                            <h4 class="mb-3" style="color: var(--secondary-color);">Factors Driving Language Alignment</h4>
-                                            <div class="d-flex align-items-center mb-3">
-                                                <div style="width: 70px; height: 40px; border-radius: 50%; background-color: var(--primary-color); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;" class="me-3">
+                                            <h4 class="mb-3" style="color: var(--secondary-color);">Possible Factors Driving Language Alignment</h4>
+                                            <div class="d-flex align-items-center">
+                                                <div style="width: 60px; height: 40px; border-radius: 50%; background-color: var(--primary-color); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;" class="me-3">
                                                     <i class="fas fa-database"></i>
                                                 </div>
-                                                <div><strong>Web-scale training data</strong> exposes models to diverse visual concepts that have strong correlations with language</div>
-                                            </div>
-                                            <div class="d-flex align-items-center mb-3">
-                                                <div style="width: 60px; height: 40px; border-radius: 50%; background-color: var(--primary-color); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;" class="me-3">
-                                                    <i class="fas fa-microchip"></i>
-                                                </div>
-                                                <div><strong>Increased parameter capacity</strong> enables representation of linguistic concepts through visual patterns</div>
+                                                <div><strong>Web-scale training data</strong> exposes models to diverse visual concepts and even images containing text.</div>
                                             </div>
                                             <div class="d-flex align-items-center">
+                                                <div style="width: 90px; height: 40px; border-radius: 50%; background-color: var(--primary-color); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;" class="me-3">
+                                                    <i class="fas fa-microchip"></i>
+                                                </div>
+                                                <div><strong>Increased model capacity and more training data</strong> enables learning more comprehensive and abstract representations, that implicitly capture linguistic concepts.</div>
+                                            </div>
+                                            <!-- <div class="d-flex align-items-center">
                                                 <div style="width: 50px; height: 40px; border-radius: 50%; background-color: var(--primary-color); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;" class="me-3">
                                                     <i class="fas fa-eye"></i>
                                                 </div>
-                                                <div><strong>More training examples</strong> refine and strengthen language-correlated visual features</div>
-                                            </div>
+                                                <div><strong>More training data</strong> refines and strengthen language-correlated visual features</div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
