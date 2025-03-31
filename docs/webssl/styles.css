@@ -1,21 +1,24 @@
 /* Theme Variables */
+/* Theme Variables */
 :root {
-    --primary-color: #2563EB;
-    --secondary-color: #5A7302;
-    --accent-color: #FF9E1B;
-    --light-color: #FFFFFF;
-    --dark-color: #2C3E50;
-    --text-color: #333333;
-    --background-color: #FFFFFF;
+    --primary-color: #2D5F8B;       /* Deep Blue */
+    --secondary-color: #5E8C61;     /* Forest Green */
+    --accent-color: #6366F1;        /* Indigo */
+    --light-color: #FFFFFF;         /* Pure White */
+    --dark-color: #000000;          /* Deep Charcoal */
+    --text-color: #000000;          /* Medium Gray */         /* Medium Gray */
+    --background-color: #FFFFFF;    /* White Background */
     --card-background: #FFFFFF;
-    --header-gradient: linear-gradient(135deg, #EBF4FF 0%, #FFFFFF 100%);
-    --footer-gradient: linear-gradient(135deg, #003D7C 0%, #2C3E50 100%);
-    --nav-gradient: linear-gradient(90deg, #2C3E50 0%, #2563EB 100%);
+    --header-gradient: linear-gradient(135deg, #EBF3FA 0%, #FFFFFF 100%);
+    --footer-gradient: linear-gradient(135deg, #1F2937 0%, #2D5F8B 100%);
+    --nav-gradient: linear-gradient(90deg, #1F2937 0%, #2D5F8B 100%);
     --header-text-color: #333333;
     --footer-text-color: #ffffff;
     --font-family: 'Nunito', 'Avenir Next', 'Segoe UI', sans-serif;
-    --link-color: #2563EB;
+    --link-color: #2D5F8B;
 }
+
+/* Note: This only contains the color variables. The rest of the CSS file would remain unchanged. */
 
 /* Font Settings */
 body {
@@ -89,7 +92,7 @@ body {
 /* Paper title */
 .paper-title {
     font-weight: 700;
-    font-size: 46px;
+    font-size: 53px;
     margin-bottom: 20px;
     position: relative;
     z-index: 1;
@@ -1193,4 +1196,119 @@ img {
 .navbar-collapse {
     max-height: 80vh;
     overflow-y: auto;
+}
+
+
+/* Text Color Overrides */
+body, p, h1, h2, h3, h4, h5, h6, li, td, th, div, span, a, .card-text, .lead, .section-title, 
+.question-title, .figure-caption, .accordion-button, .accordion-body, .findings-list, .card-title {
+  color: #000000 !important;
+}
+
+.question-answer p, .question-answer li, .accordion-body p {
+  color: #000000 !important;
+}
+
+/* Keep white text on buttons and colored backgrounds */
+.btn, 
+.question-number, 
+.accordion-button:not(.collapsed),
+.data-table th {
+  color: #FFFFFF !important;
+}
+
+/* Preserve special color elements */
+.improvement-positive {
+  color: #10b981 !important;
+}
+
+.improvement-negative {
+  color: #ef4444 !important;
+}
+
+.highlight-cell {
+  color: var(--primary-color) !important;
+}
+
+/* Specific override for colored paragraphs in TL;DR section */
+p.lead.fw-bold strong {
+  color: var(--primary-color) !important;
+}
+
+/* Fix for card headers with colored text */
+.finding-card h5 {
+  color: inherit !important;
+}
+
+/* Add these style overrides to fix the specific color issues */
+
+/* Change "Not necessarily" to black in the TL;DR section */
+.tldr-box p.lead strong {
+    color: #000000 !important; /* Black color */
+    font-size: 1.5rem;
+}
+
+/* Ensure the badge numbers in Key Takeaways section have white text */
+#conclusions .badge.bg-primary {
+    color: #FFFFFF !important; /* White text */
+}
+
+/* Make the webpage wider by increasing container max-widths */
+
+/* Make the webpage moderately wider than default but not too wide */
+
+/* Increase the width of all Bootstrap containers to a moderate size */
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+    max-width: 85% !important; /* Use 85% of the viewport width instead of 95% */
+    width: 85% !important;
+}
+
+/* For specific sections that need consistent width */
+.col-lg-11.mx-auto {
+    max-width: 85% !important;
+    flex: 0 0 85% !important;
+}
+
+/* For extra large screens, set a more reasonable maximum */
+@media (min-width: 1400px) {
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl,
+    .container-xxl {
+        max-width: 1400px !important; /* Reduced from 1800px to a more readable width */
+    }
+    
+    .col-lg-11.mx-auto {
+        max-width: 1400px !important;
+        flex: 0 0 1400px !important;
+    }
+}
+
+/* Ensure images can scale properly in the containers */
+.figure-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Update the text color in active nav pills to white */
+.custom-nav-pills .nav-link.active {
+    background-color: var(--primary-color);
+    color: white !important; /* Override the global text color with !important */
+}
+
+/* Ensure hover state also has proper contrast if background changes */
+.custom-nav-pills .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* If there's a transition, make sure it applies to color too */
+.custom-nav-pills .nav-link {
+    transition: all 0.3s ease;
 }

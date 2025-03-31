@@ -1,9 +1,9 @@
-/* Crisp Neutrals Color Scheme */
+/* Professional Modern Color Scheme */
 :root {
     /* Modern color palette */
-    --primary-color: #334155;       /* Charcoal Blue */
-    --secondary-color: #84A98C;     /* Sage Green */
-    --accent-color: #CB8A58;        /* Terracotta */
+    --primary-color: #2D5F8B;       /* Deep Blue */
+    --secondary-color: #5E8C61;     /* Forest Green */
+    --accent-color: #6366F1;        /* Indigo */
     --light-color: #FFFFFF;         /* Pure White */
     --dark-color: #1F2937;          /* Deep Charcoal */
     --text-color: #4B5563;          /* Medium Gray */
@@ -12,7 +12,7 @@
     
     /* Simplified gradients */
     --header-gradient: linear-gradient(to bottom, #F8F9FA, #FFFFFF);
-    --footer-gradient: linear-gradient(to right, #1F2937, #334155);
+    --footer-gradient: linear-gradient(to right, #1F2937, #2D5F8B);
     --nav-gradient: var(--primary-color);  /* Solid color instead of gradient */
     
     --header-text-color: #1F2937;
@@ -31,58 +31,58 @@
 
 /* Button hover states */
 .primary-btn:hover {
-    background-color: #1F2937; /* Darker blue */
+    background-color: #1D4267; /* Darker blue */
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(51, 65, 85, 0.3);
+    box-shadow: 0 4px 12px rgba(45, 95, 139, 0.3);
 }
 
 .secondary-btn:hover {
-    background-color: #6B8E75; /* Darker sage */
+    background-color: #4A704D; /* Darker green */
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(132, 169, 140, 0.3);
+    box-shadow: 0 4px 12px rgba(94, 140, 97, 0.3);
 }
 
 .accent-btn:hover {
-    background-color: #B47444; /* Darker terracotta */
+    background-color: #4F46E5; /* Darker indigo */
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(203, 138, 88, 0.3);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 
 /* Progress bar colors */
 .progress-bar[style*="background-color: #93c5fd"] {
-    background-color: #94A3B8 !important; /* Lighter slate */
+    background-color: #8CAACB !important; /* Lighter blue */
 }
 
 .progress-bar[style*="background-color: #60a5fa"] {
-    background-color: #64748B !important; /* Light slate */
+    background-color: #5E8EBF !important; /* Light blue */
 }
 
 .progress-bar[style*="background-color: #3b82f6"] {
-    background-color: #475569 !important; /* Medium slate */
+    background-color: #427AA5 !important; /* Medium blue */
 }
 
 .progress-bar[style*="background-color: #2563eb"] {
-    background-color: var(--primary-color) !important; /* Main slate */
+    background-color: var(--primary-color) !important; /* Main blue */
 }
 
-/* Amber progress bars updated to terracotta tones */
+/* Indigo progress bars */
 .progress-bar[style*="background-color: #fdba74"] {
-    background-color: #F4C7AB !important; /* Lighter terracotta */
+    background-color: #A5B4FC !important; /* Lighter indigo */
 }
 
 .progress-bar[style*="background-color: #fb923c"] {
-    background-color: #E5B388 !important; /* Light terracotta */
+    background-color: #818CF8 !important; /* Light indigo */
 }
 
 .progress-bar[style*="background-color: #f97316"] {
-    background-color: #CB8A58 !important; /* Medium terracotta */
+    background-color: #6366F1 !important; /* Medium indigo */
 }
 
 .progress-bar[style*="background-color: #ea580c"] {
-    background-color: #B47444 !important; /* Dark terracotta */
+    background-color: #4F46E5 !important; /* Dark indigo */
 }
 
 /* Additional crisp theme adjustments */
