@@ -64,13 +64,68 @@
                     </div>
                     <div class="mt-4">
                         <a href="https://arxiv.org/abs/2504.01017" class="btn primary-btn me-2"><i class="fas fa-file-alt me-2"></i>Paper</a>
-                        <a href="http://github.com/dfan/webssl" class="btn secondary-btn me-2"><i class="fab fa-github me-2"></i>Code</a>
-                        <a href="#" class="btn accent-btn"><i class="fas fa-weight-hanging me-2"></i>Model Weights</a>
+                        <a href="https://github.com/facebookresearch/webssl" class="btn secondary-btn me-2"><i class="fab fa-github me-2"></i>Code</a>
+                        <a href="https://huggingface.co/collections/facebook/web-ssl-68094132c15fbd7808d1e9bb" class="btn accent-btn"><i class="fas fa-weight-hanging me-2"></i>Model Weights</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+
+
+    <!-- News Updates Section - Add right after the header section -->
+    <section class="news-updates" id="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-11 mx-auto">
+                    <div class="updates-box p-4 rounded mb-5" style="background-color: rgba(37, 99, 235, 0.05); border-left: 4px solid var(--primary-color); box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);">
+                        <h2 class="section-title mb-3">News & Updates</h2>
+                        <ul class="updates-list" style="list-style-type: none; padding-left: 0;">
+                            <li class="mb-2 d-flex align-items-start">
+                                <span class="update-date me-3" style="min-width: 120px; font-weight: 600; color: var(--primary-color);">April 23, 2025</span>
+                                <span class="update-content">We are open-sourcing all models from this work at the <a href="https://github.com/facebookresearch/webssl" class="fw-bold">facebookresearch/webssl</a> GitHub repository.</span>
+                            </li>
+                            <li class="mb-2 d-flex align-items-start">
+                                <span class="update-date me-3" style="min-width: 120px; font-weight: 600; color: var(--primary-color);">April 1, 2025</span>
+                                <span class="update-content">Our paper "Scaling Language-Free Visual Representation Learning" is now available on arXiv.</span>
+                            </li>
+                            <!-- You can add more updates here as needed -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .news-updates {
+            margin-top: 10px;
+        }
+        
+        .news-updates .section-title {
+            margin-top: 0;
+            padding-top: 0;
+        }
+        
+        .updates-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed rgba(0,0,0,0.1);
+        }
+        
+        .updates-list li:last-child {
+            border-bottom: none;
+        }
+        
+        @media (max-width: 768px) {
+            .update-date, .update-content {
+                display: block;
+            }
+            
+            .update-date {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
 
     <!-- Main Content -->
     <main class="container">
@@ -799,7 +854,7 @@
                                     </div>
                                     <h3 class="card-title">Code & Models</h3>
                                     <p class="card-text">Access open-source model definitions and inference code for Web-SSL.</p>
-                                    <a href="http://github.com/dfan/webssl" class="btn secondary-btn">GitHub Repository</a>
+                                    <a href="https://github.com/facebookresearch/webssl" class="btn secondary-btn">GitHub Repository</a>
                                 </div>
                             </div>
                         </div>
@@ -811,7 +866,7 @@
                                     </div>
                                     <h3 class="card-title">Model Weights</h3>
                                     <p class="card-text">Download our Web-SSL model weights for your research.</p>
-                                    <a href="#" class="btn accent-btn">Download Models</a>
+                                    <a href="https://huggingface.co/collections/facebook/web-ssl-68094132c15fbd7808d1e9bb" class="btn accent-btn">Download Models</a>
                                 </div>
                             </div>
                         </div>
@@ -886,7 +941,7 @@
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p>Yes, we plan to open-source our Web-SSL vision models to support reproducibility and further research into visual self-supervised learning. Inference code and model weights will be available via our GitHub repository. We hope releasing these resources will enable the broader research community to achieve the next generation of vision models that excel at both conventional vision and modern multimodal capabilities.</p>
+                                    <p>Yes, we are open sourceing our models here: https://github.com/facebookresearch/webssl </p>
                                 </div>
                             </div>
                         </div>
