@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "hugo-extended": "^0.110.0"
+  },
+  "dependencies": {
+    "lessc": "^1.0.2"
   }
 }
